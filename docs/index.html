@@ -401,6 +401,37 @@
 
     <a href="#" id="scroll-to-top" class="dmtop global-radius"><i class="fa fa-angle-up"></i></a>
 
+    <script>
+        let slideIndex = 0;
+        let timer = null;
+
+        showSlides();
+
+        function showSlides() {
+            let i;
+            let slides = document.getElementsByClassName("mySlides");
+            let dots = document.getElementsByClassName("dot");
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) { slideIndex = 1 }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+            timer = setTimeout(showSlides, 2000); // Change image every 2 seconds
+        }
+
+        function pressDot(num) {
+            slideIndex = num;
+            clearTimeout(timer);
+            showSlides();
+        }
+
+    </script>
+    
     <!-- ALL JS FILES -->
     <script src="js/all.js"></script>
     <!-- Camera Slider -->
