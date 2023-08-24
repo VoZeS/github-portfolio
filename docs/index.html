@@ -170,6 +170,10 @@
                         <!--<div class="post-thumb">-->
                         <div id="img">
                             <img src="uploads/AQHHDDD.png" class="img-fluid" alt="Image" width="1440" height="810">
+                            img{
+                            width: 100%;
+                            height: 100%;
+                            }
                         </div>
 
                         <!-- <div class="img-overlay">
@@ -209,13 +213,14 @@
                 <script>
                     var img = document.getElementById('img');
 
+
                     var slides = ['uploads/AQHHDDD.png', 'uploads/EFTP.png'];
 
                     var Start = 0;
 
                     function slider() {
                         if (Start < slides.length) { Start = Start + 1; } else { Start = 1; } console.log(img); img.innerHTML = "<img src="
-                            + slides[Start - 1] + "width=" + '1440' +  "height=" + '810' + ">";
+                            + slides[Start - 1] + ">";
 
                     }
                     setInterval(slider, 2000);
