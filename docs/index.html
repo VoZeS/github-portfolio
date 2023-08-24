@@ -168,22 +168,8 @@
                 <div class="gallery-single fix gallery-grid gal_a">
                     <div class="post-box">
                         <!--<div class="post-thumb">-->
-                        <img src="uploads/AQHHDDD.png" class="img-fluid" alt="Image" width="1440" height="810">
-
-                        <div class="slideshow-container">
-                            <div class="mySlides fade">
-                                <!-- <div class="numbertext">1 / 3</div> -->
-                                <img src="uploads/AQHHDDD.png" class="img-fluid" alt="Image" width="1440" height="810">
-                            </div>
-                            <div id="myModal2" class="modal2">
-                                <span class="close close_multi"></span>
-                                <img class="modal2-content" id="img02">
-                            </div>
-        
-                            <div class="mySlides fade">
-                                <!-- <div class="numbertext">2 / 3</div> -->
-                                <img id="myImg3" src="uploads/EFTP.png" class="hometeam-icon">
-                            </div>
+                        <div id="img">
+                            <img src="uploads/AQHHDDD.png" class="img-fluid" alt="Image" width="1440" height="810">
                         </div>
 
                         <!-- <div class="img-overlay">
@@ -220,21 +206,36 @@
                 </div>
                 <!-- </div> -->
 
+                <script>
+                    var img = document.getElementById('img');
+
+                    var slides = ['uploads/AQHHDDD.png', 'uploads/EFTP.png'];
+
+                    var Start = 0;
+
+                    function slider() {
+                        if (Start < slides.length) { Start = Start + 1; } else { Start = 1; } console.log(img); img.innerHTML = "<img src="
+                            + slides[Start - 1] + ">";
+
+                    }
+                    setInterval(slider, 2000);
+                </script>
+
                 <!-- ECHOES FROM THE PAST -->
                 <!-- <div class="col-md-4 col-sm-6 col-lg-4 gallery-grid gal_b"> -->
                 <div class="gallery-single fix gallery-grid gal_b">
                     <div class="post-box">
                         <!--<div class="post-thumb">-->
-                            <img src="uploads/EFTP.png" class="img-fluid" alt="Image" width="1440" height="810">
-                            <!--<div class="img-overlay">
+                        <img src="uploads/EFTP.png" class="img-fluid" alt="Image" width="1440" height="810">
+                        <!--<div class="img-overlay">
                                      <a href="https://nautilusstudios.itch.io/echoes-from-the-past"
                                         class="hoverbutton global-radius"><i class="fa fa-picture-o"></i></a>
                                 </div>-->
-                            <div class="date">
-                                <span>Coop</span>
-                                <span>|</span>
-                                <span>Group Project</span>
-                            </div>
+                        <div class="date">
+                            <span>Coop</span>
+                            <span>|</span>
+                            <span>Group Project</span>
+                        </div>
                         <!--</div>-->
                         <div class="post-info">
                             <h4 style="text-align:center">Echoes From The Past</h4>
@@ -271,16 +272,16 @@
                 <div class="gallery-single fix gallery-grid gal_b">
                     <div class="post-box">
                         <!--<div class="post-thumb">-->
-                            <img src="uploads/GOTG_BET.png" class="img-fluid" alt="Image" width="1440" height="810">
-                            <!--<div class="img-overlay">
+                        <img src="uploads/GOTG_BET.png" class="img-fluid" alt="Image" width="1440" height="810">
+                        <!--<div class="img-overlay">
                                     <a href="https://projectwastelanders.github.io/ProjectWastelanders/"
                                         class="hoverbutton global-radius"><i class="fa fa-picture-o"></i></a>
                                 </div>-->
-                            <div class="date">
-                                <span>Shooter</span>
-                                <span>|</span>
-                                <span>Group Project</span>
-                            </div>
+                        <div class="date">
+                            <span>Shooter</span>
+                            <span>|</span>
+                            <span>Group Project</span>
+                        </div>
                         <!--</div>-->
                         <div class="post-info">
                             <h4 style="text-align:center">Guardians of the Galaxy: The Bet</h4>
@@ -319,16 +320,16 @@
                 <div class="gallery-single fix gallery-grid gal_b">
                     <div class="post-box">
                         <!--<div class="post-thumb">-->
-                            <img src="uploads/ImperialFallMini.png" class="img-fluid" alt="Image" width="1440" height="810">
-                            <!--<div class="img-overlay">
+                        <img src="uploads/ImperialFallMini.png" class="img-fluid" alt="Image" width="1440" height="810">
+                        <!--<div class="img-overlay">
                                     <a href="https://vozes.github.io/NautilusStudios-ProjectII_RPG/"
                                         class="hoverbutton global-radius"><i class="fa fa-picture-o"></i></a>
                                 </div>-->
-                            <div class="date">
-                                <span>RPG</span>
-                                <span>|</span>
-                                <span>Group Project</span>
-                            </div>
+                        <div class="date">
+                            <span>RPG</span>
+                            <span>|</span>
+                            <span>Group Project</span>
+                        </div>
                         <!--</div>-->
                         <div class="post-info">
                             <h4 style="text-align:center">Imperial Fall</h4>
