@@ -260,39 +260,23 @@
                             <p>&nbsp;</p>
                             <p>&nbsp;</p>
                             <!-- IMAGES CHANGE -->
-                            <img src="uploads/EFTP.png" class="img-fluid" alt="Image" style="width:500px;height:250px;"
-                                onclick="townhousePics();" />
-
-                            <script>
-                                var curImage = 0;
-                                var cImages = [
-                                    'uploads/EFTP.png',
-                                    'uploads/GOTG_BET.png',
-                                    'uploads/ImperialFallMini.png'
-                                ];
-
-                                function townHousePics(direction) {
-                                    if (direction == 'next') {
-                                        curImage++;
-
-                                        if (curImage == 5) {
-                                            curImage = 0;
-                                        }
-                                    } else {
-                                        curImage--;
-                                        // even reset the counter here when
-                                        // its getting 0
-                                    }
-
-                                    document.images[0].src = cImages[curImage];
-                                }
-                            </script>
-                            <p>&nbsp;</p>
-                            <h6 style="text-align:center">
-                                <a href="" onclick="townHousePics('next'); return false;">Next</a>
-                                <a href="" onclick="townHousePics('previous'); return false;">Previous</a>
-                            </h6>
-
+                            <section id="modal">
+                                <section class="modal-background">
+                                    <div class="close-btn">&times;</div>
+                                    <figure>
+                                        <img class="img-main" src="uploads/ImperialFallMini.png" alt="Bird on a tree" style="width:500px;height:200px;">
+                                    </figure>
+                                    <figure class="modal-gallery">
+                                        <img src="uploads/AnimationGame.png" alt="Bird on a tree" style="width:500px;height:200px;">
+                                        <img src="uploads/AQHHDDD.png" alt="Boat at night" style="width:500px;height:200px;">
+                                        <img src="uploads/GOTG_BET.png" alt="Dog sitting" style="width:500px;height:200px;">
+                                    </figure>
+                                    <section class="modal-btns">
+                                        <button class="modal-btn prev-btn">&lt;</button>
+                                        <button class="modal-btn next-btn">&gt;</button>
+                                    </section>
+                                </section>
+                            </section>
                             <p>&nbsp;</p>
                             <p>&nbsp;</p>
                             <!-- IMAGES CHANGE -->
