@@ -259,6 +259,41 @@
                             <p style="text-align:justify">...</p>
                             <p>&nbsp;</p>
                             <p>&nbsp;</p>
+                            <!-- IMAGES CHANGE -->
+                            <div id="imageGallery">
+                                <img id="image" src="uploads/EFTP.png" style="width:500px;height:600px;" />
+                                <div id="previous">Previous</div>
+                                <div id="next">Next</div>
+                            </div>
+
+                            <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+
+                            <script>
+                                $(document).ready(function () {
+
+                                    var images = [
+                                        "uploads/EFTP.png",
+                                        "uploads/GOTG_BET.png",
+                                        "uploads/ImperialFallMini.png"
+                                    ];
+
+                                    var imageIndex = 0;
+
+                                    $("#previous").on("click", function () {
+                                        imageIndex = (imageIndex + images.length - 1) % (images.length);
+                                        $("#image").attr('src', images[imageIndex]);
+                                    });
+
+                                    $("#next").on("click", function () {
+                                        imageIndex = (imageIndex + 1) % (images.length);
+                                        $("#image").attr('src', images[imageIndex]);
+                                    });
+
+                                    $("#image").attr(images[0]);
+
+                                });
+                            </script>
+                            <!-- IMAGES CHANGE -->
                             <h4 style="text-align:center"><a
                                     href="https://www.youtube.com/watch?v=6xFiIvS6Xe8">Trailer</a>
                                 <a> | </a>
