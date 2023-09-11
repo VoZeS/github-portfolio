@@ -264,12 +264,16 @@
                                 <section class="modal-background">
                                     <div class="close-btn">&times;</div>
                                     <figure>
-                                        <img class="img-main" src="uploads/ImperialFallMini.png" alt="Bird on a tree" style="width:500px;height:200px;">
+                                        <img class="img-main" src="uploads/ImperialFallMini.png" alt="Bird on a tree"
+                                            style="width:500px;height:200px;">
                                     </figure>
                                     <figure class="modal-gallery">
-                                        <img src="uploads/AnimationGame.png" alt="Bird on a tree" style="width:500px;height:200px;">
-                                        <img src="uploads/AQHHDDD.png" alt="Boat at night" style="width:500px;height:200px;">
-                                        <img src="uploads/GOTG_BET.png" alt="Dog sitting" style="width:500px;height:200px;">
+                                        <img src="uploads/AnimationGame.png" alt="Bird on a tree"
+                                            style="width:500px;height:200px;">
+                                        <img src="uploads/AQHHDDD.png" alt="Boat at night"
+                                            style="width:500px;height:200px;">
+                                        <img src="uploads/GOTG_BET.png" alt="Dog sitting"
+                                            style="width:500px;height:200px;">
                                     </figure>
                                     <section class="modal-btns">
                                         <button class="modal-btn prev-btn">&lt;</button>
@@ -277,6 +281,31 @@
                                     </section>
                                 </section>
                             </section>
+                            <script>
+                                // TOGGLE IMAGE GALLERY MODAL ON CLICK //
+
+                                var imgOverlays = document.querySelectorAll(".imgs section div");
+                                var mainImg = document.querySelector(".img-main");
+                                var allModalImgs = document.querySelectorAll(".modal-gallery img");
+                                var modal = document.querySelector(".modal-background");
+                                var closeBtn = document.querySelector(".close-btn");
+                                var opacity = 0.4;
+
+                                function resetOpacity() {
+                                    for (i = 0; i < allModalImgs.length; i++) {
+                                        allModalImgs[i].style.opacity = 1;
+                                    }
+                                }
+
+                                document.querySelector("#gallery .imgs").addEventListener("click", function (e) {
+                                    for (i = 0; i < imgOverlays.length; i++) {
+                                        if (e.target == imgOverlays[i]) {
+                                            modal.style.display = "block";
+                                            mainImg.src = e.target.previousElementSibling.src;
+                                        }
+                                    }
+                                });
+                            </script>
                             <p>&nbsp;</p>
                             <p>&nbsp;</p>
                             <!-- IMAGES CHANGE -->
