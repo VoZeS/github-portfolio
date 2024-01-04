@@ -53,6 +53,9 @@
         max-width: 1000px;
         position: relative;
         margin: auto;
+        height: auto;
+        border: auto;
+        align-items: center;
     }
 
     /* Next & previous buttons */
@@ -85,6 +88,19 @@
         color: black;
     }
 </style>
+
+<style>
+    #video-container {
+        max-width: 100%;
+        overflow: hidden;
+    }
+
+    .video-fluid {
+        width: 100%;
+        height: auto;
+    }
+</style>
+
 </head>
 
 <body id="page-top" class="politics_version">
@@ -135,7 +151,9 @@
                 <span class="cd-words-wrapper">
                     <b class="is-visible"> Game Design</b>
                     <b> Programming</b>
-                    <b> 3D Animation</b>
+                    <b> Ideation </b>
+                    <b> Writting </b>
+                    <b> Level Design </b>
                 </span>
             </h3>
         </div>
@@ -226,22 +244,20 @@
                 <div class="gallery-single fix gallery-grid gal_b gal_c">
                     <div class="post-box">
                         <!--<div class="post-thumb">-->
-                        <div id="img">
-                            <img src="uploads/RedactorExpres.png" class="img-fluid" alt="Image" width="1440"
-                                height="810">
-
+                        <div id="video-container">
+                            <video autoplay loop muted class="video-fluid">
+                                <source src="videos/RedactorExpresVideo.mp4" type="video/mp4">
+                                Tu navegador no admite el elemento de video.
+                            </video>
                         </div>
-
-                        <!-- <div class="img-overlay">
-                                        <a href="https://vozes.github.io/AQHHDDD/" class="hoverbutton global-radius"><i
-                                                class="fa fa-picture-o"></i></a>
-                                    </div> -->
                         <div class="date">
                             <span>Arcade</span>
                             <span>|</span>
                             <span>Group Project</span>
                             <span>|</span>
                             <span>AWARDED PROJECT</span>
+                            <span>|</span>
+                            <span>2 WEEKS</span>
                         </div>
                         <!--</div>-->
                         <div class="post-info">
@@ -251,65 +267,62 @@
                                 <li>Nov, 2023</li>
                             </ul>
                             <p style="text-align:center; font-style: italic"> <strong>BEST RE-PLAYABLE GAME AWARD in
-                                the PREMIS LUDI</strong></p>
+                                    the PREMIS LUDI</strong></p>
                             <p>&nbsp;</p>
                             <p style="text-align:center">Redactor Exprés is a video game in which the player puts
                                 himself in the shoes of the director of the
                                 the latest current editorial. The objective is to decide which news items, of all those
                                 of the day,
                                 finally reach the newspaper, taking into account the interests of the population. </p>
-                            <p style="text-align:center"> Once the newspaper is published, the player will receive money
-                                which he can spend on more interesting news, on improving
-                                interesting news, in improving the facilities, in hiring more journalists or in
-                                obtaining better contracts.
-                                better contracts.</p>
-                                <p>&nbsp;</p>
-                                <p style="text-align:center"> <strong>Involved in: </strong> Design and Gameplay Programming
-                                </p>
-                                <p>&nbsp;</p>
+                            <p>&nbsp;</p>
+                            <h3 style="text-align:center"> <strong>Team Size: </strong> 3 </h3>
+                            <h3 style="text-align:center"> <strong>Engine: </strong> Unity </h3>
+                            <h3 style="text-align:center"> <strong>Involved in: </strong></h3>
+                            <p style="text-align:center">- Concept Design </p>
+                            <p style="text-align:center">- Reward System Design </p>
+                            <p style="text-align:center">- Upgrades System Design </p>
+                            <p style="text-align:center">- Gameplay Programming </p>
+                            <p>&nbsp;</p>
 
-                                <!-- IMAGES CHANGE -->
-                                <div class="slideshow-container">
-                                    <div class="mySlides6">
-                                        <img src="uploads/RedactorExpres/CompanyName.png"
-                                            width = "1000px" height = "600px">
-                                    </div>
-                                    <div class="mySlides6">
-                                        <img src="uploads/RedactorExpres/SelectNews.png"
-                                            style="width:1000px;height:600px ;">
-                                    </div>
-
-                                    <div class="mySlides6">
-                                        <img src="uploads/RedactorExpres/ScoreLogic.png"
-                                        width = "400px" height = "600px">
-                                    </div>
-
-                                    <div class="mySlides6">
-                                        <img src="uploads/RedactorExpres/UpgradeScreen.png"
-                                            style="width:1000px;height:600px;">
-                                    </div>
-
-                                    <div class="mySlides6">
-                                        <img src="uploads/RedactorExpres/WinScene.png"
-                                            style="width:1000px;height:600px;">
-                                    </div>
-
-                                    <div class="mySlides6">
-                                        <img src="uploads/RedactorExpres/MobileScreen.png"
-                                            style="width:1000px;height:600px ;">
-                                    </div>
-
-                                    <a class="prev" onclick="plusSlides(-1, 5)">&#10094;</a>
-                                    <a class="next" onclick="plusSlides(1, 5)">&#10095;</a>
+                            <!-- IMAGES CHANGE -->
+                            <div class="slideshow-container">
+                                <div class="mySlides6">
+                                    <img src="uploads/RedactorExpres/CompanyName.png" width="1000px" height="600px">
+                                </div>
+                                <div class="mySlides6">
+                                    <img src="uploads/RedactorExpres/SelectNews.png"
+                                        style="width:1000px;height:600px ;">
                                 </div>
 
-                                <p>&nbsp;</p>
-                                <p>&nbsp;</p>
-                                <!-- IMAGES CHANGE -->
+                                <div class="mySlides6">
+                                    <img src="uploads/RedactorExpres/ScoreLogic.png" width="400px" height="600px">
+                                </div>
 
-                                <h4 style="text-align:center"><a href="https://youtu.be/8grucUyaKlY">Trailer</a>
-                                    <a> | </a>
-                                    <a href="uploads/RedactorExpres/RedactorExpresEXE.rar">Play it!</a>
+                                <div class="mySlides6">
+                                    <img src="uploads/RedactorExpres/UpgradeScreen.png"
+                                        style="width:1000px;height:600px;">
+                                </div>
+
+                                <div class="mySlides6">
+                                    <img src="uploads/RedactorExpres/WinScene.png" style="width:1000px;height:600px;">
+                                </div>
+
+                                <div class="mySlides6">
+                                    <img src="uploads/RedactorExpres/MobileScreen.png"
+                                        style="width:1000px;height:600px ;">
+                                </div>
+
+                                <a class="prev" onclick="plusSlides(-1, 5)">&#10094;</a>
+                                <a class="next" onclick="plusSlides(1, 5)">&#10095;</a>
+                            </div>
+
+                            <p>&nbsp;</p>
+                            <p>&nbsp;</p>
+                            <!-- IMAGES CHANGE -->
+
+                            <h4 style="text-align:center"><a href="https://youtu.be/8grucUyaKlY">Trailer</a>
+                                <a> | </a>
+                                <a href="uploads/RedactorExpres/RedactorExpresEXE.rar">Play it!</a>
                         </div>
                     </div>
                 </div>
@@ -320,19 +333,18 @@
                 <div class="gallery-single fix gallery-grid gal_a">
                     <div class="post-box">
                         <!--<div class="post-thumb">-->
-                        <div id="img">
-                            <img src="uploads/AQHHDDD.png" class="img-fluid" alt="Image" width="1440" height="810">
-
-                        </div>
-
-                        <!-- <div class="img-overlay">
-                                    <a href="https://vozes.github.io/AQHHDDD/" class="hoverbutton global-radius"><i
-                                            class="fa fa-picture-o"></i></a>
-                                </div> -->
+                            <div id="video-container">
+                                <video autoplay loop muted class="video-fluid">
+                                    <source src="videos/AQHHDDDVideo.mp4" type="video/mp4">
+                                    Tu navegador no admite el elemento de video.
+                                </video>
+                            </div>
                         <div class="date">
                             <span>Arcade</span>
                             <span>|</span>
                             <span>Individual Project</span>
+                            <span>|</span>
+                            <span>2 MONTHS</span>
                         </div>
                         <!--</div>-->
                         <div class="post-info">
@@ -347,8 +359,13 @@
                                 created
                                 for Amaga Prod. </p>
                             <p>&nbsp;</p>
-                            <p style="text-align:center"> <strong>Involved in: </strong> Design, Art, Programming
-                            </p>
+                            <h3 style="text-align:center"> <strong>Team Size: </strong> 1 </h3>
+                            <h3 style="text-align:center"> <strong>Engine: </strong> Unity </h3>
+                            <h3 style="text-align:center"> <strong>Involved in: </strong></h3>
+                            <p style="text-align:center">- Concept Design </p>
+                            <p style="text-align:center">- Gameplay Design </p>
+                            <p style="text-align:center">- Pixel Art </p>
+                            <p style="text-align:center">- Gameplay Programming </p>
                             <p>&nbsp;</p>
 
                             <!-- IMAGES CHANGE -->
@@ -360,11 +377,6 @@
                                 <div class="mySlides2">
                                     <img src="uploads/AQHHDDD/AQHHDDD_Menu_Draft5.png"
                                         style="width:1000px;height:600px ;">
-                                </div>
-
-                                <div class="mySlides2">
-                                    <img src="uploads/AQHHDDD/AQHHDDD_Menu_Draft2.png"
-                                        style="width:1000px;height:600px;">
                                 </div>
 
                                 <div class="mySlides2">
@@ -410,8 +422,7 @@
                                 </div>
 
                                 <div class="mySlides2">
-                                    <img src="uploads/AQHHDDD/AQHHDDD_List_Draft.png"
-                                    width = "600px" height = "600px">
+                                    <img src="uploads/AQHHDDD/AQHHDDD_List_Draft.png" width="600px" height="600px">
                                 </div>
 
                                 <a class="prev" onclick="plusSlides(-1, 1)">&#10094;</a>
@@ -433,17 +444,20 @@
                 <div class="gallery-single fix gallery-grid gal_b gal_c">
                     <div class="post-box">
                         <!--<div class="post-thumb">-->
-                        <img src="uploads/EFTP.png" class="img-fluid" alt="Image" width=1440 height=810>
-                        <!--<div class="img-overlay">
-                                     <a href="https://nautilusstudios.itch.io/echoes-from-the-past"
-                                        class="hoverbutton global-radius"><i class="fa fa-picture-o"></i></a>
-                                </div>-->
+                            <div id="video-container">
+                                <video autoplay loop muted class="video-fluid">
+                                    <source src="videos/EFTPVideo.mp4" type="video/mp4">
+                                    Tu navegador no admite el elemento de video.
+                                </video>
+                            </div>
                         <div class="date">
                             <span>Coop</span>
                             <span>|</span>
                             <span>Group Project</span>
                             <span>|</span>
                             <span>AWARDED PROJECT</span>
+                            <span>|</span>
+                            <span>5 DAYS</span>
                         </div>
                         <!--</div>-->
                         <div class="post-info">
@@ -458,20 +472,20 @@
                             <p style="text-align:center">Explore different regions through time and save the
                                 world
                                 with
-                                the help of your friend. You can't do it alone!
-                                Use the power of music to discover hidden elements and powerful echoes to solve
-                                amazing
-                                puzzles. Combinate both to become heroes!</p>
+                                the help of your friend. You can't do it alone!</p>
                             <p>&nbsp;</p>
-                            <p style="text-align:center"> <strong>Involved in: </strong> Level Design & Programming
-                            </p>
+                            <h3 style="text-align:center"> <strong>Team Size: </strong> 5 </h3>
+                            <h3 style="text-align:center"> <strong>Engine: </strong> Unity </h3>
+                            <h3 style="text-align:center"> <strong>Involved in: </strong></h3>
+                            <p style="text-align:center">- Level Design (6 in total)</p>
+                            <p style="text-align:center">- Puzzles Design </p>
+                            <p style="text-align:center">- Storytelling </p>
+                            <p style="text-align:center">- Gameplay Programming </p>
+                            <p>&nbsp;</p>
                             <p>&nbsp;</p>
                             <p>&nbsp;</p>
                             <!-- IMAGES CHANGE -->
                             <div class="slideshow-container">
-                                <div class="mySlides1">
-                                    <img src="uploads/EFTP/EFTP_Legend.png" style="width:1000px;height:600px;">
-                                </div>
 
                                 <div class="mySlides1">
                                     <img src="uploads/EFTP/EFTP_LVL1_Figma.png" style="width:1000px;height:600px;">
@@ -537,6 +551,8 @@
                                 <a href="https://nautilusstudios.itch.io/echoes-from-the-past">Learn
                                     More</a>
                             </h4>
+                            
+                            <p>&nbsp;</p>
                         </div>
                     </div>
                 </div>
@@ -547,7 +563,12 @@
                 <div class="gallery-single fix gallery-grid gal_b">
                     <div class="post-box">
                         <!--<div class="post-thumb">-->
-                        <img src="uploads/VRDefense.png" class="img-fluid" alt="Image" width=1440 height=810>
+                            <div id="video-container">
+                                <video autoplay loop muted class="video-fluid">
+                                    <source src="videos/VRDefenseVideo.mp4" type="video/mp4">
+                                    Tu navegador no admite el elemento de video.
+                                </video>
+                            </div>
                         <!--<div class="img-overlay">
                                      <a href="https://nautilusstudios.itch.io/echoes-from-the-past"
                                         class="hoverbutton global-radius"><i class="fa fa-picture-o"></i></a>
@@ -556,6 +577,8 @@
                             <span>VR</span>
                             <span>|</span>
                             <span>Group Project</span>
+                            <span>|</span>
+                            <span>1 MONTH</span>
                         </div>
                         <!--</div>-->
                         <div class="post-info">
@@ -572,8 +595,13 @@
                                 progressing from the watchtower or to teleport to one of the towers built
                                 on the map and throw bombs or shoot a crossbow manually. </p>
                             <p>&nbsp;</p>
-                            <p style="text-align:center"> <strong>Involved in: </strong> VR Implementation & Game Design
-                            </p>
+                            <h3 style="text-align:center"> <strong>Team Size: </strong> 4 </h3>
+                            <h3 style="text-align:center"> <strong>Engine: </strong> Unity </h3>
+                            <h3 style="text-align:center"> <strong>Involved in: </strong></h3>
+                            <p style="text-align:center">- Concept Design</p>
+                            <p style="text-align:center">- Weapons Design</p>
+                            <p style="text-align:center">- Towers Design</p>
+                            <p style="text-align:center">- VR Implementation </p>
                             <p>&nbsp;</p>
                             <p>&nbsp;</p>
                             <!-- IMAGES CHANGE -->
