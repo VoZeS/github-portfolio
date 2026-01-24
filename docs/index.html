@@ -1,1203 +1,223 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-
-<!-- Basic -->
-<meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<!-- Site Metas -->
-<title>David Boces - Portfolio</title>
-<meta name="keywords" content="">
-<meta name="description" content="">
-<meta name="author" content="">
-
-<!-- Site Icons -->
-<link rel="shortcut icon" href="images/VoZeS-IcOn-03.png" type="image/x-icon" />
-<link rel="apple-touch-icon" href="images/VoZeS-IcOn-03.png">
-
-<!-- Bootstrap CSS -->
-<link rel="stylesheet" href="css/bootstrap.min.css">
-<!-- Site CSS -->
-<link rel="stylesheet" href="style.css">
-<!-- Responsive CSS -->
-<link rel="stylesheet" href="css/responsive.css">
-<!-- Custom CSS -->
-<link rel="stylesheet" href="css/custom.css">
-<script src="js/modernizr.js"></script> <!-- Modernizr -->
-
-<!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
-
-<meta name="viewport" content="width=device-width, initial-scale=1">
-
-<style>
-    * {
-        box-sizing: border-box
-    }
-
-    /* Estilos generales */
-.gallery-single {
-    margin-bottom: 20px;
-    text-align: center;
-}
-
-/* Estilos para dispositivos móviles */
-@media only screen and (max-width: 768px) {
-    /* Ajustar el tamaño de las imágenes */
-    .slideshow-container .mySlides1 img {
-        width: 100%; 
-        height: auto; 
-    }
-    .slideshow-container .mySlides2 img {
-        width: 100%; 
-        height: auto; 
-    }
-    .slideshow-container .mySlides3 img {
-        width: 100%;
-        height: auto;
-    }
-    .slideshow-container .mySlides4 img {
-        width: 100%;
-        height: auto;
-    }
-    .slideshow-container .mySlides5 img {
-        width: 100%; 
-        height: auto;
-    }
-    .slideshow-container .mySlides6 img {
-        width: 100%; 
-        height: auto; 
-    }
-    .slideshow-container .mySlides7 img {
-        width: 100%; 
-        height: auto; 
-    }
-    .slideshow-container .mySlides8 img {
-        width: 100%; 
-        height: auto; 
-    }
-    
-    /* Ajustar el tamaño del texto */
-    .post-info h4,
-    .post-info p {
-        font-size: 16px; 
-    }
-    
-}
-
-    /* .mySlides1,
-    .mySlides2 {
-        display: none
-    } */
-
-    img {
-        vertical-align: middle;
-    }
-
-    /* Slideshow container */
-    .slideshow-container {
-        max-width: 1000px;
-        position: relative;
-        margin: auto;
-        height: auto;
-        border: auto;
-        align-items: center;
-    }
-
-    /* Next & previous buttons */
-    .prev,
-    .next {
-        cursor: pointer;
-        position: absolute;
-        top: 50%;
-        width: auto;
-        padding: 16px;
-        margin-top: -22px;
-        color: white;
-        font-weight: bold;
-        font-size: 18px;
-        transition: 0.6s ease;
-        border-radius: 0 3px 3px 0;
-        user-select: none;
-    }
-
-    /* Position the "next button" to the right */
-    .next {
-        right: 0;
-        border-radius: 3px 0 0 3px;
-    }
-
-    /* On hover, add a grey background color */
-    .prev:hover,
-    .next:hover {
-        background-color: #f1f1f1;
-        color: black;
-    }
-</style>
-
-<style>
-    #video-container {
-        max-width: 100%;
-        overflow: hidden;
-    }
-
-    .video-fluid {
-        width: 100%;
-        height: auto;
-    }
-</style>
-
-</head>
-
-<body id="page-top" class="politics_version">
-
-    <!-- LOADER -->
-    <!-- <div id="preloader">
-        <div id="main-ld">
-            <div id="loader"></div>
-        </div>
-    </div> -->
-    <!-- END LOADER -->
-
-    <!-- Navigation -->
-
-    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
-        <div class="container">
-            <a class="navbar-brand js-scroll-trigger" href="#page-top">
-                <img class="img-fluid" src="images/VoZeS-LoGo-MiNi-02.png" alt="" />
-            </a>
-            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
-                data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
-                aria-label="Toggle navigation">
-                Menu
-                <i class="fa fa-bars"></i>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarResponsive">
-                <ul class="navbar-nav text-uppercase ml-auto">
-                    <li class="nav-item">
-                        <a class="nav-link js-scroll-trigger active" href="#home">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link js-scroll-trigger" href="#about">About Me</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link js-scroll-trigger" href="#portfolio">Portfolio</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-
-    <section id="home" class="main-banner parallaxie" style="background: url('uploads/AQHHDDD.png')">
-        <div class="heading">
-            <h1>Hey, I'm David</h1>
-            <p>Willing to leave a stepmark with a coherent and innovative game design, <br>always looking beyond.</p>
-            <h3 class="cd-headline clip is-full-width">
-                <span>Competences in </span>
-                <span class="cd-words-wrapper">
-                    <b class="is-visible"> Game Design</b>
-                    <b> Level Design </b>
-                    <b> Writting </b>
-                    <b> Storytelling </b>
-                    <b> Programming</b>
-                </span>
-            </h3>
-        </div>
-    </section>
-
-    <svg id="clouds" class="hidden-xs" xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100"
-        viewBox="0 0 85 100" preserveAspectRatio="none">
-        <path d="M-5 100 Q 0 20 5 100 Z
-            M0 100 Q 5 0 10 100
-            M5 100 Q 10 30 15 100
-            M10 100 Q 15 10 20 100
-            M15 100 Q 20 30 25 100
-            M20 100 Q 25 -10 30 100
-            M25 100 Q 30 10 35 100
-            M30 100 Q 35 30 40 100
-            M35 100 Q 40 10 45 100
-            M40 100 Q 45 50 50 100
-            M45 100 Q 50 20 55 100
-            M50 100 Q 55 40 60 100
-            M55 100 Q 60 60 65 100
-            M60 100 Q 65 50 70 100
-            M65 100 Q 70 20 75 100
-            M70 100 Q 75 45 80 100
-            M75 100 Q 80 30 85 100
-            M80 100 Q 85 20 90 100
-            M85 100 Q 90 50 95 100
-            M90 100 Q 95 25 100 100
-            M95 100 Q 100 15 105 100 Z">
-        </path>
-    </svg>
-
-    <div id="portfolio" class="section lb">
-        <div class="container">
-            <div class="section-title text-left">
-                <h3>Portfolio</h3>
-                <p>Get a look to all my projects, have fun with them, and don't forget to share if you like them :]
-                </p>
-            </div><!-- end title -->
-
-            <div class="gallery-menu row">
-                <div class="col-md-12">
-                    <div class="button-group filter-button-group text-left">
-                        <button class="active" data-filter="*">All</button>
-                        <button data-filter=".gal_a">Individual Projects</button>
-                        <button data-filter=".gal_b">Group Projects</button>
-                        <button data-filter=".gal_c">Awarded Projects</button>
-                    </div>
-                </div>
-            </div>
-
-            <div class="gallery-list row">
-                
-                <!-- Unlighted -->
-                <!-- <div class="col-md-4 col-sm-6 col-lg-4 gallery-grid gal_a"> -->
-                    <div class="gallery-single fix gallery-grid gal_b gal_c">
-                        <div class="post-box">
-                            <!--<div class="post-thumb">-->
-                                <p>&nbsp;</p>
-                                <p>&nbsp;</p>
-                            <iframe width="560" height="315" src="https://www.youtube.com/embed/PixQ0fGW1mc?si=k7AXcagXIHdsHy12" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                            <div class="date">
-                                <span>Puzzles / Narrative</span>
-                                <span>|</span>
-                                <span>Group Project</span>
-                                <span>|</span>
-                                <span>AWARDED PROJECT</span>
-                                <span>|</span>
-                                <span>1 YEAR</span>
-                            </div>
-                            <!--</div>-->
-                            <div class="post-info">
-                                <h4 style="text-align:center">Unlighted</h4>
-                                <ul>
-                                    <li>by Ginuh Games |</li>
-                                    <li>April, 2024 - Current Time</li>
-                                </ul>
-                                <p style="text-align:center; font-style: italic"> <strong>BEST VIDEO GAME AWARD in
-                                        the PREMIS PIXEL</strong></p>
-                                <p>&nbsp;</p>
-                                <p style="text-align:center; font-style: italic"> <strong>CATALAN AUDIENCE AWARD FINALIST in the PREMIS SAGA </strong></p>
-                                <p>&nbsp;</p>
-                                <p style="text-align:center">You will play a test subject working for a company called Umbral Alchemy, dedicated to the research of stones with mysterious properties never before seen by humans. 
-                                    Thanks to you, they hope to discover the origin of these strange materials, but it won't be an easy path.</p>
-                                <p>&nbsp;</p>
-                                <h3 style="text-align:center"> <strong>Team Size: </strong> 3 </h3>
-                                <h3 style="text-align:center"> <strong>Engine: </strong> Unity </h3>
-                                <h3 style="text-align:center"> <strong>Involved in: </strong></h3>
-                                <h3 style="text-align:center">- Level Design </h3>
-                                <h3 style="text-align:center">- Unity Development </h3>
-                                <h3 style="text-align:center">- Storytelling </h3>
-                                <h3 style="text-align:center">- UX Design </h3>
-                                <p>&nbsp;</p>
-    
-                                <!-- IMAGES CHANGE -->
-                                <div class="slideshow-container">
-                                    <div class="mySlides8">
-                                        <img src="uploads/Unlighted/2_Fondo Pagina.png" width="1000px" height="600px">
-                                    </div>
-
-                                    <div class="mySlides8">
-                                        <img src="uploads/Unlighted/GameplayScreenshot_1.png" width="1000px" height="600px">
-                                    </div>
-
-                                    <div class="mySlides8">
-                                        <img src="uploads/Unlighted/GameplayScreenshot_2.png" width="1000px" height="600px">
-                                    </div>
-                                    
-                                    <div class="mySlides8">
-                                        <img src="uploads/Unlighted/GameplayScreenshot_3.png" width="1000px" height="600px">
-                                    </div>
-
-                                    <div class="mySlides8">
-                                        <img src="uploads/Unlighted/GameplayScreenshot_4.png" width="1000px" height="600px">
-                                    </div>
-
-                                    <div class="mySlides8">
-                                        <img src="uploads/Unlighted/GameplayScreenshot_5.png" width="1000px" height="600px">
-                                    </div>
-
-                                    <div class="mySlides8">
-                                        <img src="uploads/Unlighted/GameplayScreenshot_6.png" width="1000px" height="600px">
-                                    </div>
-    
-                                    <a class="prev" onclick="plusSlides(-1, 7)">&#10094;</a>
-                                    <a class="next" onclick="plusSlides(1, 7)">&#10095;</a>
-                                </div>
-    
-                                <p>&nbsp;</p>
-                                <p>&nbsp;</p>
-                                <!-- IMAGES CHANGE -->
-    
-                                <h4 style="text-align:center"><a href="https://www.youtube.com/watch?v=K1YdErZyfHI&ab_channel=GinuhGames">Trailer</a>
-                                    <a> | </a>
-                                    <a href="https://store.steampowered.com/app/3051540/Unlighted_Demo/">Play it!</a>
-                                    <p>&nbsp;</p>
-                                    <a> ------------------------------------------------------- </a>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- </div> -->
-
-                <!-- N'Orb -->
-                <!-- <div class="col-md-4 col-sm-6 col-lg-4 gallery-grid gal_a"> -->
-                    <div class="gallery-single fix gallery-grid gal_b">
-                        <div class="post-box">
-                            <!--<div class="post-thumb">-->
-                                                                <p>&nbsp;</p>
-                                <p>&nbsp;</p>
-                                    <iframe src="https://drive.google.com/file/d/163MwR3KL3keVSUCaVmZZZoILPjjQ5k5Q/preview" 
-            width="560" height="315" 
-            allow="autoplay" 
-            allowfullscreen>
-    </iframe>
-                            <div class="date">
-                                <span>Platformer / Isometric</span>
-                                <span>|</span>
-                                <span>Group Project</span>
-                                <!-- <span>|</span>
-                                <span>AWARDED PROJECT</span> -->
-                                <span>|</span>
-                                <span>5 DAYS</span>
-                            </div>
-                            <!--</div>-->
-                            <div class="post-info">
-                                <h4 style="text-align:center">N'Orb</h4>
-                                <ul>
-                                    <li>by Nautilus Studios |</li>
-                                    <li>Feb, 2024</li>
-                                </ul>
-                                <!-- <p style="text-align:center; font-style: italic"> <strong>BEST RE-PLAYABLE GAME AWARD in
-                                        the PREMIS LUDI</strong></p> -->
-                                <p>&nbsp;</p>
-                                <p style="text-align:center">Embody a man who is obsessed with an idea, a thought, perfection, a goal. 
-                                    For him, this is reflected as an orb of light. Immediately this orb is kidnapped by a mysterious figure.
-                                     The protagonist cannot allow it and sets out on his quest. Even so, to reach that perfect conception, it will not be easy, 
-                                     as he will encounter his fears and concerns: the nightmares.</p>
-                                <p>&nbsp;</p>
-                                <h3 style="text-align:center"> <strong>Team Size: </strong> 5 </h3>
-                                <h3 style="text-align:center"> <strong>Engine: </strong> Unity </h3>
-                                <h3 style="text-align:center"> <strong>Involved in: </strong></h3>
-                                <h3 style="text-align:center">- Level Design </h3>
-                                <h3 style="text-align:center">- Gameplay Programming </h3>
-                                <h3 style="text-align:center">- Storytelling </h3>
-                                <h3 style="text-align:center">- Concept Design </h3>
-                                <p>&nbsp;</p>
-    
-                                <!-- IMAGES CHANGE -->
-                                <div class="slideshow-container">
-                                    <div class="mySlides7">
-                                        <img src="uploads/NOrb/NOrb1.png" width="1000px" height="600px">
-                                    </div>
-                                    <div class="mySlides7">
-                                        <img src="uploads/NOrb/Reality1_Figma.png" width="1000px" height="600px">
-                                    </div>
-                                    
-                                    <div class="mySlides7">
-                                        <img src="uploads/NOrb/NOrb2.png" width="1000px" height="600px">
-                                    </div>
-
-                                    <div class="mySlides7">
-                                        <img src="uploads/NOrb/Nightmare1_Figma.png" width="1000px" height="600px">
-                                    </div>
-
-                                    <div class="mySlides7">
-                                        <img src="uploads/NOrb/NOrb3.png" width="1000px" height="600px">
-                                    </div>
-    
-                                    <div class="mySlides7">
-                                        <img src="uploads/NOrb/Reality2_Figma.png" width="1000px" height="600px">
-                                    </div>
-
-                                    <div class="mySlides7">
-                                        <img src="uploads/NOrb/NOrb4.png" width="1000px" height="600px">
-                                    </div>
-    
-                                    <div class="mySlides7">
-                                        <img src="uploads/NOrb/Nightmare2_Figma.png" width="1000px" height="600px">
-                                    </div>
-
-                                    <div class="mySlides7">
-                                        <img src="uploads/NOrb/NOrb5.png" width="1000px" height="600px">
-                                    </div>
-    
-                                    <div class="mySlides7">
-                                        <img src="uploads/NOrb/Reality3_Figma.png" width="1000px" height="600px">
-                                    </div>
-
-                                    <div class="mySlides7">
-                                        <img src="uploads/NOrb/NOrb6.png" width="1000px" height="600px">
-                                    </div>
-                                    
-                                    <div class="mySlides7">
-                                        <img src="uploads/NOrb/Nightmare3_Figma.png" width="1000px" height="600px">
-                                    </div>
-
-                                    <div class="mySlides7">
-                                        <img src="uploads/NOrb/NOrb7.png" width="1000px" height="600px">
-                                    </div>
-    
-                                    <a class="prev" onclick="plusSlides(-1, 6)">&#10094;</a>
-                                    <a class="next" onclick="plusSlides(1, 6)">&#10095;</a>
-                                </div>
-    
-                                <p>&nbsp;</p>
-                                <p>&nbsp;</p>
-                                <!-- IMAGES CHANGE -->
-    
-                                <h4 style="text-align:center"><a href="https://drive.google.com/file/d/163MwR3KL3keVSUCaVmZZZoILPjjQ5k5Q/view?usp=drive_link">Trailer</a>
-                                    <a> | </a>
-                                    <a href="uploads/NOrb/NOrb.rar">Play it!</a>
-                                    <p>&nbsp;</p>
-                                    <a> ------------------------------------------------------- </a>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- </div> -->
-
-                <!-- Redactor Expres -->
-                <!-- <div class="col-md-4 col-sm-6 col-lg-4 gallery-grid gal_a"> -->
-                <div class="gallery-single fix gallery-grid gal_b gal_c">
-                    <div class="post-box">
-                        <!--<div class="post-thumb">-->
-                                                        <p>&nbsp;</p>
-                            <p>&nbsp;</p>
-                            <iframe width="560" height="315" src="https://www.youtube.com/embed/8grucUyaKlY?si=5JE1aGjzDeII9uzi" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                        <div class="date">
-                            <span>Arcade</span>
-                            <span>|</span>
-                            <span>Group Project</span>
-                            <span>|</span>
-                            <span>AWARDED PROJECT</span>
-                            <span>|</span>
-                            <span>2 WEEKS</span>
-                        </div>
-                        <!--</div>-->
-                        <div class="post-info">
-                            <h4 style="text-align:center">Redactor Exprés</h4>
-                            <ul>
-                                <li>by Nautilus Studios |</li>
-                                <li>Nov, 2023</li>
-                            </ul>
-                            <p style="text-align:center; font-style: italic"> <strong>BEST RE-PLAYABLE GAME AWARD in
-                                    the PREMIS LUDI</strong></p>
-                            <p>&nbsp;</p>
-                            <p style="text-align:center">Redactor Exprés is a video game in which the player puts
-                                himself in the shoes of the director of the
-                                the latest current editorial. The objective is to decide which news items, of all those
-                                of the day,
-                                finally reach the newspaper, taking into account the interests of the population. </p>
-                            <p>&nbsp;</p>
-                            <h3 style="text-align:center"> <strong>Team Size: </strong> 3 </h3>
-                            <h3 style="text-align:center"> <strong>Engine: </strong> Unity </h3>
-                            <h3 style="text-align:center"> <strong>Involved in: </strong></h3>
-                            <h3 style="text-align:center">- Concept Design </h3>
-                            <h3 style="text-align:center">- Reward System Design </h3>
-                            <h3 style="text-align:center">- Upgrades System Design </h3>
-                            <h3 style="text-align:center">- Gameplay Programming </h3>
-                            <p>&nbsp;</p>
-
-                            <!-- IMAGES CHANGE -->
-                            <div class="slideshow-container">
-                                <div class="mySlides6">
-                                    <img src="uploads/RedactorExpres/CompanyName.png" width="1000px" height="600px">
-                                </div>
-                                <div class="mySlides6">
-                                    <img src="uploads/RedactorExpres/SelectNews.png" width="1000px" height="600px">
-                                </div>
-
-                                <div class="mySlides6">
-                                    <img src="uploads/RedactorExpres/ScoreLogic.png" width="400px" height="600px">
-                                </div>
-
-                                <div class="mySlides6">
-                                    <img src="uploads/RedactorExpres/UpgradeScreen.png" width="1000px" height="600px">
-                                </div>
-
-                                <div class="mySlides6">
-                                    <img src="uploads/RedactorExpres/WinScene.png" width="1000px" height="600px">
-                                </div>
-
-                                <div class="mySlides6">
-                                    <img src="uploads/RedactorExpres/MobileScreen.png" width="1000px" height="600px">
-                                </div>
-
-                                <a class="prev" onclick="plusSlides(-1, 5)">&#10094;</a>
-                                <a class="next" onclick="plusSlides(1, 5)">&#10095;</a>
-                            </div>
-
-                            <p>&nbsp;</p>
-                            <p>&nbsp;</p>
-                            <!-- IMAGES CHANGE -->
-
-                            <h4 style="text-align:center"><a href="https://youtu.be/8grucUyaKlY">Trailer</a>
-                                <a> | </a>
-                                <a href="uploads/RedactorExpres/RedactorExpresEXE.rar">Play it!</a>
-                                <p>&nbsp;</p>
-                                <a> ------------------------------------------------------- </a>
-                        </div>
-                    </div>
-                </div>
-                <!-- </div> -->
-
-                <!-- ECHOES FROM THE PAST -->
-                <!-- <div class="col-md-4 col-sm-6 col-lg-4 gallery-grid gal_b"> -->
-                <div class="gallery-single fix gallery-grid gal_b gal_c">
-                    <div class="post-box">
-                        <!--<div class="post-thumb">-->
-                                                        <p>&nbsp;</p>
-                            <p>&nbsp;</p>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/6xFiIvS6Xe8?si=NIICoQWAyLA7luM8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                        <div class="date">
-                            <span>Coop</span>
-                            <span>|</span>
-                            <span>Group Project</span>
-                            <span>|</span>
-                            <span>AWARDED PROJECT</span>
-                            <span>|</span>
-                            <span>5 DAYS</span>
-                        </div>
-                        <!--</div>-->
-                        <div class="post-info">
-                            <h4 style="text-align:center">Echoes From The Past</h4>
-                            <ul>
-                                <li>by Nautilus Studios |</li>
-                                <li>Jun, 2023</li>
-                            </ul>
-                            <p style="text-align:center; font-style: italic"> <strong>BEST GAME DESIGN AWARD in
-                                    the 6th CITM Game Jam</strong></p>
-                            <p>&nbsp;</p>
-                            <p style="text-align:center">Explore different regions through time and save the
-                                world
-                                with
-                                the help of your friend. You can't do it alone!</p>
-                            <p>&nbsp;</p>
-                            <h3 style="text-align:center"> <strong>Team Size: </strong> 5 </h3>
-                            <h3 style="text-align:center"> <strong>Engine: </strong> Unity </h3>
-                            <h3 style="text-align:center"> <strong>Involved in: </strong></h3>
-                            <h3 style="text-align:center">- Level Design (6 in total)</h3>
-                            <h3 style="text-align:center">- Puzzles Design </h3>
-                            <h3 style="text-align:center">- Storytelling </h3>
-                            <h3 style="text-align:center">- Gameplay Programming </h3>
-                            <p>&nbsp;</p>
-                            <!-- IMAGES CHANGE -->
-                            <div class="slideshow-container">
-
-                                <div class="mySlides1">
-                                    <img src="uploads/EFTP/EFTP_LVL1_Figma.png" width="1000px" height="600px">
-                                </div>
-
-                                <div class="mySlides1">
-                                    <img src="uploads/EFTP/EFTP_LVL1_InGame.png" width="1000px" height="600px">
-                                </div>
-
-                                <div class="mySlides1">
-                                    <img src="uploads/EFTP/EFTP_LVL2_Figma.png" width="1000px" height="600px">
-                                </div>
-
-                                <div class="mySlides1">
-                                    <img src="uploads/EFTP/EFTP_LVL2_InGame.png" width="1000px" height="600px">
-                                </div>
-
-                                <div class="mySlides1">
-                                    <img src="uploads/EFTP/EFTP_LVL3_Figma.png" width="1000px" height="600px">
-                                </div>
-
-                                <div class="mySlides1">
-                                    <img src="uploads/EFTP/EFTP_LVL3_InGame.png" width="1000px" height="600px">
-                                </div>
-
-                                <div class="mySlides1">
-                                    <img src="uploads/EFTP/EFTP_LVL4_Figma.png" width="1000px" height="600px">
-                                </div>
-
-                                <div class="mySlides1">
-                                    <img src="uploads/EFTP/EFTP_LVL4_InGame.png" width="1000px" height="600px">
-                                </div>
-
-                                <div class="mySlides1">
-                                    <img src="uploads/EFTP/EFTP_LVL5_Figma.png" width="1000px" height="600px">
-                                </div>
-
-                                <div class="mySlides1">
-                                    <img src="uploads/EFTP/EFTP_LVL5_InGame.png" width="1000px" height="600px">
-                                </div>
-
-                                <div class="mySlides1">
-                                    <img src="uploads/EFTP/EFTP_LVL6_Figma.png"  width="1000px" height="600px">
-                                </div>
-
-                                <div class="mySlides1">
-                                    <img src="uploads/EFTP/EFTP_LVL6_InGame.png" width="1000px" height="600px">
-                                </div>
-
-                                <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
-                                <a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
-                            </div>
-
-                            <p>&nbsp;</p>
-                            <p>&nbsp;</p>
-                            <!-- IMAGES CHANGE -->
-
-                            <h4 style="text-align:center"><a
-                                    href="https://www.youtube.com/watch?v=6xFiIvS6Xe8">Trailer</a>
-                                <a> | </a>
-                                <a href="https://nautilusstudios.itch.io/echoes-from-the-past">Learn
-                                    More</a>
-                                    <p>&nbsp;</p>
-                                    <a> ------------------------------------------------------- </a>
-                            </h4>
-                            
-                            <p>&nbsp;</p>
-                        </div>
-                    </div>
-                </div>
-                <!--</div>-->
-
-                <!-- VR DEFENSE -->
-                <!-- <div class="col-md-4 col-sm-6 col-lg-4 gallery-grid gal_b"> -->
-                <div class="gallery-single fix gallery-grid gal_b">
-                    <div class="post-box">
-                        <!--<div class="post-thumb">-->
-                                                        <p>&nbsp;</p>
-                            <p>&nbsp;</p>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/J1re2vG8JsI?si=RnomkepCauj1Cxch" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                        <!--<div class="img-overlay">
-                                     <a href="https://nautilusstudios.itch.io/echoes-from-the-past"
-                                        class="hoverbutton global-radius"><i class="fa fa-picture-o"></i></a>
-                                </div>-->
-                        <div class="date">
-                            <span>VR</span>
-                            <span>|</span>
-                            <span>Group Project</span>
-                            <span>|</span>
-                            <span>1 MONTH</span>
-                        </div>
-                        <!--</div>-->
-                        <div class="post-info">
-                            <h4 style="text-align:center">VR Defense</h4>
-                            <ul>
-                                <li>by Nautilus Studios |</li>
-                                <li>Feb - Jun, 2023</li>
-                            </ul>
-                            <p>&nbsp;</p>
-                            <p style="text-align:center">Tower Defense with two phases: construction and combat.
-                                In the construction phase, the player is going to be in lookout mode in a tower where he
-                                will be able to see the whole playing field to build towers.
-                                In the combat phase, the player will have two options: to watch how his strategy is
-                                progressing from the watchtower or to teleport to one of the towers built
-                                on the map and throw bombs or shoot a crossbow manually. </p>
-                            <p>&nbsp;</p>
-                            <h3 style="text-align:center"> <strong>Team Size: </strong> 4 </h3>
-                            <h3 style="text-align:center"> <strong>Engine: </strong> Unity </h3>
-                            <h3 style="text-align:center"> <strong>Involved in: </strong></h3>
-                            <h3 style="text-align:center">- Concept Design</h3>
-                            <h3 style="text-align:center">- Weapons Design</h3>
-                            <h3 style="text-align:center">- Towers Design</h3>
-                            <h3 style="text-align:center">- VR Implementation </h3>
-                            <p>&nbsp;</p>
-                            <!-- IMAGES CHANGE -->
-                            <div class="slideshow-container">
-                                <div class="mySlides5">
-                                    <img src="uploads/VR_DEFENSE/TowersView.png" width="1000px" height="600px">
-                                </div>
-
-                                <div class="mySlides5">
-                                    <img src="uploads/VR_DEFENSE/TowersBuild.png" width="1000px" height="600px">
-                                </div>
-
-                                <div class="mySlides5">
-                                    <img src="uploads/VR_DEFENSE/CrossbowShoot1.png" width="1000px" height="600px">
-                                </div>
-
-                                <div class="mySlides5">
-                                    <img src="uploads/VR_DEFENSE/BombThrow.png" width="1000px" height="600px">
-                                </div>
-
-                                <div class="mySlides5">
-                                    <img src="uploads/VR_DEFENSE/Looking.png" width="1000px" height="600px">
-                                </div>
-                                <a class="prev" onclick="plusSlides(-1, 4)">&#10094;</a>
-                                <a class="next" onclick="plusSlides(1, 4)">&#10095;</a>
-                            </div>
-
-                            <p>&nbsp;</p>
-                            <p>&nbsp;</p>
-                            <!-- IMAGES CHANGE -->
-
-                            <h4 style="text-align:center"><a href="https://youtu.be/J1re2vG8JsI">Trailer</a>
-                                <a> | </a>
-                                <a href="https://github.com/VoZeS/VR_Defense">Learn
-                                    More</a>
-                                    <p>&nbsp;</p>
-                                    <a> ------------------------------------------------------- </a>
-                            </h4>
-                        </div>
-                    </div>
-                </div>
-                <!--</div>-->
-
-                <!-- GOTG: THE BET -->
-                <!-- <div class="col-md-4 col-sm-6 col-lg-4 gallery-grid gal_b">-->
-                <div class="gallery-single fix gallery-grid gal_b">
-                    <div class="post-box">
-                        <!--<div class="post-thumb">-->
-                                                        <p>&nbsp;</p>
-                            <p>&nbsp;</p>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/vrAAI4zPIIY?si=BJhvJLXHtq5K-HWx" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                        <!--<div class="img-overlay">
-                                    <a href="https://projectwastelanders.github.io/ProjectWastelanders/"
-                                        class="hoverbutton global-radius"><i class="fa fa-picture-o"></i></a>
-                                </div>-->
-                        <div class="date">
-                            <span>Shooter</span>
-                            <span>|</span>
-                            <span>Group Project</span>
-                            <span>|</span>
-                            <span>5 MONTHS</span>
-                        </div>
-                        <!--</div>-->
-                        <div class="post-info">
-                            <h4 style="text-align:center">Guardians of the Galaxy: The Bet</h4>
-                            <ul>
-                                <li>by Red Forest Studios |</li>
-                                <li>Feb - Jun, 2023</li>
-                            </ul>
-                            <p style="text-align:center">Top-Down Action Shooting game set in the Marvel
-                                Universe.
-                                Play through completely different worlds with the Guardians of the Galaxy squad
-                                and
-                                battle against those who threaten the universe with unique weapons.
-                                Unlock different types of skills while progressing in the story and create all
-                                kinds
-                                of
-                                weapons to fight the evil.</p>
-                            <p>&nbsp;</p>
-                            <h3 style="text-align:center"> <strong>Team Size: </strong> 25 </h3>
-                            <h3 style="text-align:center"> <strong>Engine: </strong> Hello Engine (student's engine) </h3>
-                            <h3 style="text-align:center"> <strong>Involved in: </strong></h3>
-                            <h3 style="text-align:center">- Design Team Leader [organisation, playtesting, deadlines...] </h3>
-                            <h3 style="text-align:center">- Level Design [HUB, Level 1 & Level 2]</h3>
-                            <h3 style="text-align:center">- Abilities Design</h3>
-                            <h3 style="text-align:center">- Writting & Storytelling</h3>
-                            <p>&nbsp;</p>
-
-                            <!-- IMAGES CHANGE -->
-                            <div class="slideshow-container">
-                                <div class="mySlides3">
-                                    <img src="uploads/GOTG/GamePillars_Draft.png" width="1000px" height="600px">
-                                </div>
-
-                                <div class="mySlides3">
-                                    <img src="uploads/GOTG/CoreLoop_Draft.png" width="1000px" height="600px">
-                                </div>
-
-                                <div class="mySlides3">
-                                    <img src="uploads/GOTG/Weapons_Draft.png" width="1000px" height="600px">
-                                </div>
-
-                                <div class="mySlides3">
-                                    <img src="uploads/GOTG/Abilities_Draft.png" width="1000px" height="600px">
-                                </div>
-
-                                <div class="mySlides3">
-                                    <img src="uploads/GOTG/LVL1AndHUB_Draft.png" width="1000px" height="600px">
-                                </div>
-
-                                <div class="mySlides3">
-                                    <img src="uploads/GOTG/HUB_Figma.png" width="1000px" height="600px">
-                                </div>
-
-                                <div class="mySlides3">
-                                    <img src="uploads/GOTG/HUB_InGame.png" width="1000px" height="600px">
-                                </div>
-
-                                <div class="mySlides3">
-                                    <img src="uploads/GOTG/LVL1_Figma.png" width="1000px" height="600px">
-                                </div>
-
-                                <div class="mySlides3">
-                                    <img src="uploads/GOTG/LVL1_InGame.png" width="1000px" height="600px">
-                                </div>
-
-                                <div class="mySlides3">
-                                    <img src="uploads/GOTG/LVL2_Draft.png" width="1000px" height="600px">
-                                </div>
-
-                                <div class="mySlides3">
-                                    <img src="uploads/GOTG/LVL2_Figma.png" width="1000px" height="600px">
-                                </div>
-
-                                <div class="mySlides3">
-                                    <img src="uploads/GOTG/LVL2_Remodeled_Figma.png" width="1000px" height="600px">
-                                </div>
-
-                                <div class="mySlides3">
-                                    <img src="uploads/GOTG/LVL2_InGame.png" width="1000px" height="600px">
-                                </div>
-
-                                <div class="mySlides3">
-                                    <img src="uploads/GOTG/Dialog_Script.png" width="1000px" height="600px">
-                                </div>
-
-                                <div class="mySlides3">
-                                    <img src="uploads/GOTG/QA_Draft.png" width="1000px" height="600px">
-                                </div>
-
-                                <a class="prev" onclick="plusSlides(-1, 2)">&#10094;</a>
-                                <a class="next" onclick="plusSlides(1, 2)">&#10095;</a>
-                            </div>
-
-                            <p>&nbsp;</p>
-                            <p>&nbsp;</p>
-                            <!-- IMAGES CHANGE -->
-
-                            <h4 style="text-align:center"><a
-                                    href="https://www.youtube.com/watch?v=vrAAI4zPIIY">Trailer</a>
-                                <a> | </a>
-                                <a href="https://projectwastelanders.github.io/ProjectWastelanders/index.html">Learn
-                                    More</a>
-                                    <p>&nbsp;</p>
-                                    <a> ------------------------------------------------------- </a>
-                            </h4>
-                        </div>
-                    </div>
-                </div>
-                <!--</div>-->
-
-                <!-- IMPERIAL FALL -->
-                <!--<div class="col-md-4 col-sm-6 col-lg-4 gallery-grid gal_b">-->
-                <div class="gallery-single fix gallery-grid gal_b">
-                    <div class="post-box">
-                        <!--<div class="post-thumb">-->
-                                                        <p>&nbsp;</p>
-                            <p>&nbsp;</p>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/ZcurcKaMgCU?si=zD5sDu9TDuRVuFZP" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                        <!--<div class="img-overlay">
-                                    <a href="https://vozes.github.io/NautilusStudios-ProjectII_RPG/"
-                                        class="hoverbutton global-radius"><i class="fa fa-picture-o"></i></a>
-                                </div>-->
-                        <div class="date">
-                            <span>RPG</span>
-                            <span>|</span>
-                            <span>Group Project</span>
-                            <span>|</span>
-                            <span>5 MONTHS</span>
-                        </div>
-                        <!--</div>-->
-                        <div class="post-info">
-                            <h4 style="text-align:center">Imperial Fall</h4>
-                            <ul>
-                                <li>by Nautilus Studios |</li>
-                                <li>Feb - Jun, 2022</li>
-                            </ul>
-                            <p style="text-align:center">Medieval videogame RPG with Turn-Based-Combat and
-                                skills
-                                tree, set in the witch hunt period.
-                                Enjoy this open world and solve multiple puzzles to revenge the 4 main
-                                characters of
-                                this epic story.</p>
-                            <p>&nbsp;</p>
-                            <h3 style="text-align:center"> <strong>Team Size: </strong> 7 </h3>
-                            <h3 style="text-align:center"> <strong>Engine: </strong> None (Visual Studio / SDL) </h3>
-                            <h3 style="text-align:center"> <strong>Involved in: </strong></h3>
-                            <h3 style="text-align:center">- Team Leader [organisation, playtesting, deadlines...] </h3>
-                            <h3 style="text-align:center">- Level Design [Main Plaza, Town, Battlefield, Frozen Cave, Templar's Camp (Forest) & Castle]</h3>
-                            <h3 style="text-align:center">- Mission Design</h3>
-                            <h3 style="text-align:center">- Writting & Storytelling</h3>
-                            <p>&nbsp;</p>
-                            <!-- IMAGES CHANGE -->
-                            <div class="slideshow-container">
-                                <div class="mySlides4">
-                                    <img src="uploads/ImperialFall/GamePillars.png" width="1000px" height="600px">
-                                </div>
-
-                                <div class="mySlides4">
-                                    <img src="uploads/ImperialFall/Zone1_Draft.png" width="1000px" height="600px">
-                                </div>
-
-                                <div class="mySlides4">
-                                    <img src="uploads/ImperialFall/Zone1_Final.png" width="1000px" height="600px">
-                                </div>
-
-                                <div class="mySlides4">
-                                    <img src="uploads/ImperialFall/Zone1.1_InGame.png" width="1000px" height="600px">
-                                </div>
-
-                                <div class="mySlides4">
-                                    <img src="uploads/ImperialFall/Zone2_Draft.png" width="1000px" height="600px">
-                                </div>
-
-                                <div class="mySlides4">
-                                    <img src="uploads/ImperialFall/Zone2_Final.png" width="1000px" height="600px">
-                                </div>
-
-                                <div class="mySlides4">
-                                    <img src="uploads/ImperialFall/Zone3_draft.png" width="1000px" height="600px">
-                                </div>
-
-                                <div class="mySlides4">
-                                    <img src="uploads/ImperialFall/Zone3_Final.png" width="1000px" height="600px">
-                                </div>
-
-                                <div class="mySlides4">
-                                    <img src="uploads/ImperialFall/Zone5_Draft.png" width="1000px" height="600px">
-                                </div>
-
-                                <div class="mySlides4">
-                                    <img src="uploads/ImperialFall/Zone5_Final.png" width="1000px" height="600px">
-                                </div>
-
-                                <div class="mySlides4">
-                                    <img src="uploads/ImperialFall/Zone5.1_Final.png" width="1000px" height="600px">
-                                </div>
-
-                                <div class="mySlides4">
-                                    <img src="uploads/ImperialFall/Mission1_Draft.png" width="1000px" height="600px">
-                                </div>
-
-                                <div class="mySlides4">
-                                    <img src="uploads/ImperialFall/Mission2_Draft.png" width="1000px" height="600px">
-                                </div>
-
-                                <div class="mySlides4">
-                                    <img src="uploads/ImperialFall/Mission3_Draft.png" width="1000px" height="600px">
-                                </div>
-
-                                <div class="mySlides4">
-                                    <img src="uploads/ImperialFall/Mission4_Draft.png" width="1000px" height="600px">
-                                </div>
-
-                                <div class="mySlides4">
-                                    <img src="uploads/ImperialFall/Mission5_Draft.png" width="1000px" height="600px">
-                                </div>
-
-                                <a class="prev" onclick="plusSlides(-1, 3)">&#10094;</a>
-                                <a class="next" onclick="plusSlides(1, 3)">&#10095;</a>
-                            </div>
-
-                            <p>&nbsp;</p>
-                            <p>&nbsp;</p>
-                            <!-- IMAGES CHANGE -->
-
-                            <h4 style="text-align:center"><a
-                                    href="https://www.youtube.com/watch?v=ZcurcKaMgCU">Trailer</a>
-                                <a> | </a>
-                                <a href="https://vozes.github.io/NautilusStudios-ProjectII_RPG/">Learn More</a>
-                                <p>&nbsp;</p>
-                                <a> ------------------------------------------------------- </a>
-                            </h4>
-                        </div>
-                    </div>
-                </div>
-                <!--</div>-->
-
-                <!-- AQHHDDD -->
-                <!-- <div class="col-md-4 col-sm-6 col-lg-4 gallery-grid gal_a"> -->
-                    <div class="gallery-single fix gallery-grid gal_a">
-                        <div class="post-box">
-                            <!--<div class="post-thumb">-->
-                                                            <p>&nbsp;</p>
-                            <p>&nbsp;</p>
-                            <div class="date">
-                                <span>Arcade</span>
-                                <span>|</span>
-                                <span>Individual Project</span>
-                                <span>|</span>
-                                <span>2 MONTHS</span>
-                            </div>
-                            <!--</div>-->
-                            <div class="post-info">
-                                <h4 style="text-align:center">AQHHDDD</h4>
-                                <ul>
-                                    <li>by David Boces |</li>
-                                    <li>Aug - Sep, 2022</li>
-                                </ul>
-                                <p>&nbsp;</p>
-                                <p style="text-align:center">Control your zodiach and avoid all thunder and lightning.
-                                    Pick up all fuel you can to keep going and arrive to the closer island. Videogame
-                                    created
-                                    for Amaga Prod. </p>
-                                <p>&nbsp;</p>
-                                <h3 style="text-align:center"> <strong>Team Size: </strong> 1 </h3>
-                                <h3 style="text-align:center"> <strong>Engine: </strong> Unity </h3>
-                                <h3 style="text-align:center"> <strong>Involved in: </strong></h3>
-                                <h3 style="text-align:center">- Concept Design </h3>
-                                <h3 style="text-align:center">- Gameplay Design </h3>
-                                <h3 style="text-align:center">- Pixel Art </h3>
-                                <h3 style="text-align:center">- Gameplay Programming </h3>
-                                <p>&nbsp;</p>
-    
-                                <!-- IMAGES CHANGE -->
-                                <div class="slideshow-container">
-                                    <div class="mySlides2">
-                                        <img src="uploads/AQHHDDD/AQHHDDD_Zodiac_Draft.png" width="1000px" height="600px">
-                                    </div>
-                                    <div class="mySlides2">
-                                        <img src="uploads/AQHHDDD/AQHHDDD_Menu_Draft5.png" width="1000px" height="600px">
-                                    </div>
-    
-                                    <div class="mySlides2">
-                                        <img src="uploads/AQHHDDD/AQHHDDD_Menu_Draft3.png" width="1000px" height="600px">
-                                    </div>
-    
-                                    <div class="mySlides2">
-                                        <img src="uploads/AQHHDDD/AQHHDDD_MainMenu.png" width="1000px" height="600px">
-                                    </div>
-    
-                                    <div class="mySlides2">
-                                        <img src="uploads/AQHHDDD/AQHHDDD_GameOver.png" width="1000px" height="600px">
-                                    </div>
-    
-                                    <div class="mySlides2">
-                                        <img src="uploads/AQHHDDD/AQHHDDD_PowerUpsDraft.png" width="1000px" height="600px">
-                                    </div>
-    
-                                    <div class="mySlides2">
-                                        <img src="uploads/AQHHDDD/AQHHDDD_Score_Draft.png" width="1000px" height="600px">
-                                    </div>
-    
-                                    <div class="mySlides2">
-                                        <img src="uploads/AQHHDDD/AQHHDDD_UI_Draft.png" width="1000px" height="600px"">
-                                    </div>
-    
-                                    <div class="mySlides2">
-                                        <img src="uploads/AQHHDDD/AQHHDDD_FirstThunder.png" width="1000px" height="600px">
-                                    </div>
-    
-                                    <div class="mySlides2">
-                                        <img src="uploads/AQHHDDD/AQHHDDD_FourthThunder.png" width="1000px" height="600px">
-                                    </div>
-    
-                                    <div class="mySlides2">
-                                        <img src="uploads/AQHHDDD/AQHHDDD_FifthThunder.png" width="1000px" height="600px">
-                                    </div>
-    
-                                    <div class="mySlides2">
-                                        <img src="uploads/AQHHDDD/AQHHDDD_List_Draft.png" width="600px" height="600px">
-                                    </div>
-    
-                                    <a class="prev" onclick="plusSlides(-1, 1)">&#10094;</a>
-                                    <a class="next" onclick="plusSlides(1, 1)">&#10095;</a>
-                                </div>
-    
-                                <p>&nbsp;</p>
-                                <p>&nbsp;</p>
-                                <!-- IMAGES CHANGE -->
-    
-                                <h4 style="text-align:center"><a href="https://vozes.github.io/AQHHDDD/">Play it!</a>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- </div> -->
-
-                <script>
-                    let slideIndex = [1, 1, 1, 1, 1, 1, 1, 1];
-                    let slideId = ["mySlides1", "mySlides2", "mySlides3", "mySlides4", "mySlides5", "mySlides6", "mySlides7", "mySlides8"]
-                    showSlides(1, 0);
-                    showSlides(1, 1);
-                    showSlides(1, 2);
-                    showSlides(1, 3);
-                    showSlides(1, 4);
-                    showSlides(1, 5);
-                    showSlides(1, 6);
-                    showSlides(1, 7);
-
-                    function plusSlides(n, no) {
-                        showSlides(slideIndex[no] += n, no);
-                    }
-
-                    function showSlides(n, no) {
-                        let i;
-                        let x = document.getElementsByClassName(slideId[no]);
-                        if (n > x.length) { slideIndex[no] = 1 }
-                        if (n < 1) { slideIndex[no] = x.length }
-                        for (i = 0; i < x.length; i++) {
-                            x[i].style.display = "none";
-                        }
-                        x[slideIndex[no] - 1].style.display = "block";
-                    }
-                </script>
-
-            </div>
-        </div>
-    </div>
-
-    <div id="about" class="section wb">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6">
-                    <div class="message-box">
-                        <h2>David Boces Obis.</h2>
-                        <p>I'm a videogame passionate, willing to leave a stepmark on the industry through a
-                            coherent,
-                            logic and innovative game design. Fanatic of the storytelling and level design. </p>
-                        <p>I'm a 4th year student in a Video Game Design and Development Degree. Game Design and
-                            Programming abilities, among others.</p>
-                        <h3>Skills</h3>
-                        <p>- Game Design / Level design</p>
-                        <p>- Storytelling</p>
-                        <p>- Autodesk (Maya, 3d Max)</p>
-                        <p>- Figma / Illustrator / Photoshop</p>
-                        <p>- C / C++ / C#</p>
-                        <p>- Unity / Unreal </p>
-                        <a href="uploads/DavidBocesObis__CV.pdf" class="sim-btn btn-hover-new"
-                            data-text="Download CV"><span>Download CV</span></a>
-                        <a href="https://www.linkedin.com/in/david-boces-obis-474196238/" class="sim-btn btn-hover-new"
-                            data-text="LinkedIn"><span>LinkedIn</span></a>
-                    </div><!-- end messagebox -->
-                </div><!-- end col -->
-
-                <div class="col-md-6">
-                    <div class="right-box-pro wow fadeIn">
-                        <img src="uploads/LudisPhoto.jpeg" alt="" class="img-fluid img-rounded">
-                    </div><!-- end media -->
-                </div><!-- end col -->
-            </div><!-- end row -->
-        </div><!-- end container -->
-    </div><!-- end section -->
-
-    <div class="copyrights">
-        <div class="container">
-            <div class="footer-distributed">
-                <div class="footer-left">
-                    <p class="footer-links">
-                        <a href="#home">Home</a>
-                        <a href="#about">About Me</a>
-                        <a href="#portfolio">Portfolio</a>
-                    </p>
-                    <p class="footer-company-name">All Rights Reserved. &copy; 2023 <a href="#">David Boces Obis</a>
-                        Design By :
-                        <a href="https://html.design/">html design</a>
-                    </p>
-                </div>
-            </div>
-        </div><!-- end container -->
-    </div><!-- end copyrights -->
-
-    <a href="#" id="scroll-to-top" class="dmtop global-radius"><i class="fa fa-angle-up"></i></a>
-
-    <!-- ALL JS FILES -->
-    <script src="js/all.js"></script>
-    <!-- Camera Slider -->
-    <script src="js/jquery.mobile.customized.min.js"></script>
-    <script src="js/jquery.easing.1.3.js"></script>
-    <script src="js/parallaxie.js"></script>
-    <script src="js/headline.js"></script>
-    <!-- Contact form JavaScript -->
-    <script src="js/jqBootstrapValidation.js"></script>
-    <script src="js/contact_me.js"></script>
-    <!-- ALL PLUGINS -->
-    <script src="js/custom.js"></script>
-    <script src="js/jquery.vide.js"></script>
-
-</body>
-
+<!DOCTYPE HTML>
+<!--
+	Massively by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>David Boces - Portfolio</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper" class="fade-in">
+
+				<!-- Intro -->
+					<div id="intro">
+						<h1>David Boces</h1>
+						<p>If something feels weird, it just means you don't understand it completely. <br />Willing to make people enjoy while learning more about the world through Game Design.</p>
+						<ul class="actions">
+							<li><a href="#header" class="button icon solid solo fa-arrow-down scrolly">Continue</a></li>
+						</ul>
+					</div>
+
+				<!-- Header -->
+					<header id="header">
+						<a href="https://www.linkedin.com/in/david-boces-obis/" class="logo">David Boces</a>
+					</header>
+
+				<!-- Nav -->
+					<nav id="nav">
+						<ul class="links">
+							<li class="active"><a href="index.html">Portfolio</a></li>
+							<li><a href="aboutme.html">About Me / Contact</a></li>
+						</ul>
+						<ul class="icons">
+							<li><a href="https://x.com/__VoZeS__" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+							<li><a href="https://www.linkedin.com/in/david-boces-obis/" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
+							<li><a href="https://www.instagram.com/boces16/" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+							<li><a href="https://github.com/VoZeS/" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+						</ul>
+					</nav>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Featured Post -->
+							<article class="post featured">
+								<header class="major">
+									<span class="date">June 6, 2025</span>
+									<h2><a href="https://store.steampowered.com/app/3051520/Unlighted/">Unlighted</a></h2>
+									<p>Unlighted is a first-person puzzle video game featuring a dystopian<br />
+									world that reflects the threshold between memory and oblivion, where you experiment <br />
+									with the characteristics of weird materials that materialize when hit by a ray of light.</p>
+								</header>
+								<a href="https://www.youtube.com/watch?v=PixQ0fGW1mc" class="image main"><img src="images/UnlightedScreenshot_1.jpg" alt="" /></a>
+								<ul class="actions special">
+									<li><a href="unlighted.html" class="button large">My contribution</a></li>
+								</ul>
+							</article>
+
+						<!-- Posts -->
+							<!-- <section class="posts">
+								<article>
+									<header>
+										<span class="date">April 24, 2017</span>
+										<h2><a href="#">Sed magna<br />
+										ipsum faucibus</a></h2>
+									</header>
+									<a href="#" class="image fit"><img src="images/pic02.jpg" alt="" /></a>
+									<p>Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis magna etiam.</p>
+									<ul class="actions special">
+										<li><a href="#" class="button">Full Story</a></li>
+									</ul>
+								</article>
+								<article>
+									<header>
+										<span class="date">April 22, 2017</span>
+										<h2><a href="#">Primis eget<br />
+										imperdiet lorem</a></h2>
+									</header>
+									<a href="#" class="image fit"><img src="images/pic03.jpg" alt="" /></a>
+									<p>Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis magna etiam.</p>
+									<ul class="actions special">
+										<li><a href="#" class="button">Full Story</a></li>
+									</ul>
+								</article>
+								<article>
+									<header>
+										<span class="date">April 18, 2017</span>
+										<h2><a href="#">Ante mattis<br />
+										interdum dolor</a></h2>
+									</header>
+									<a href="#" class="image fit"><img src="images/pic04.jpg" alt="" /></a>
+									<p>Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis magna etiam.</p>
+									<ul class="actions special">
+										<li><a href="#" class="button">Full Story</a></li>
+									</ul>
+								</article>
+								<article>
+									<header>
+										<span class="date">April 14, 2017</span>
+										<h2><a href="#">Tempus sed<br />
+										nulla imperdiet</a></h2>
+									</header>
+									<a href="#" class="image fit"><img src="images/pic05.jpg" alt="" /></a>
+									<p>Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis magna etiam.</p>
+									<ul class="actions special">
+										<li><a href="#" class="button">Full Story</a></li>
+									</ul>
+								</article>
+								<article>
+									<header>
+										<span class="date">April 11, 2017</span>
+										<h2><a href="#">Odio magna<br />
+										sed consectetur</a></h2>
+									</header>
+									<a href="#" class="image fit"><img src="images/pic06.jpg" alt="" /></a>
+									<p>Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis magna etiam.</p>
+									<ul class="actions special">
+										<li><a href="#" class="button">Full Story</a></li>
+									</ul>
+								</article>
+								<article>
+									<header>
+										<span class="date">April 7, 2017</span>
+										<h2><a href="#">Augue lorem<br />
+										primis vestibulum</a></h2>
+									</header>
+									<a href="#" class="image fit"><img src="images/pic07.jpg" alt="" /></a>
+									<p>Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis magna etiam.</p>
+									<ul class="actions special">
+										<li><a href="#" class="button">Full Story</a></li>
+									</ul>
+								</article>
+							</section> -->
+
+						<!-- Footer -->
+							<!-- <footer>
+								<div class="pagination">
+									<a href="#" class="previous">Prev</a>
+									<a href="#" class="page active">1</a>
+									<a href="#" class="page">2</a>
+									<a href="#" class="page">3</a>
+									<span class="extra">&hellip;</span>
+									<a href="#" class="page">8</a>
+									<a href="#" class="page">9</a>
+									<a href="#" class="page">10</a>
+									<a href="#" class="next">Next</a>
+								</div>
+							</footer> -->
+					</div>
+
+				<!-- Footer -->
+					<!-- <footer id="footer">
+						<section>
+							<form method="post" action="#">
+								<div class="fields">
+									<div class="field">
+										<label for="name">Name</label>
+										<input type="text" name="name" id="name" />
+									</div>
+									<div class="field">
+										<label for="email">Email</label>
+										<input type="text" name="email" id="email" />
+									</div>
+									<div class="field">
+										<label for="message">Message</label>
+										<textarea name="message" id="message" rows="3"></textarea>
+									</div>
+								</div>
+								<ul class="actions">
+									<li><input type="submit" value="Send Message" /></li>
+								</ul>
+							</form>
+						</section>
+						<section class="split contact">
+							<section class="alt">
+								<h3>Address</h3>
+								<p>Barcelona, Spain</p>
+							</section>
+							<section>
+								<h3>Phone</h3>
+								<p><a href="#">(+34) 672 13 98 16</a></p>
+							</section>
+							<section>
+								<h3>Email</h3>
+								<p><a href="#">davidboces16@gmail.com</a></p>
+							</section>
+							<section>
+								<h3>Social</h3>
+								<ul class="icons alt">
+							<li><a href="https://x.com/__VoZeS__" class="icon brands alt fa-twitter"><span class="label">Twitter</span></a></li>
+							<li><a href="https://www.linkedin.com/in/david-boces-obis/" class="icon brands alt fa-linkedin"><span class="label">LinkedIn</span></a></li>
+							<li><a href="https://www.instagram.com/boces16/" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li>
+							<li><a href="https://github.com/VoZeS/" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+								</ul>
+							</section>
+						</section>
+					</footer> -->
+
+				<!-- Copyright -->
+					<div id="copyright">
+						<ul><li>&copy; David Boces</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li></ul>
+					</div>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
 </html>
