@@ -2955,6 +2955,9 @@ video {
 			margin: 0 0 4rem 0;
 			text-align: center;
 		}
+		header.centered{
+			text-align: center;
+		}
 
 			header.major > :last-child {
 				margin-bottom: 0;
