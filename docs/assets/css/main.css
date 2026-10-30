@@ -23,7 +23,9 @@ section, summary, time, mark, audio, video {
 	border: 0;
 	font-size: 100%;
 	font: inherit;
-	vertical-align: baseline;}
+	vertical-align: baseline;
+	color: #dddddd;
+}
 
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
@@ -295,11 +297,11 @@ video {
 	}
 
 	input, select, textarea {
-		color: #212931;
+		color: #eeeeee;
 	}
 
 	a {
-		color: #212931;
+		color: #e2e2e2;
 		border-bottom-color: rgba(33, 41, 49, 0.5);
 	}
 
@@ -309,11 +311,11 @@ video {
 		}
 
 	strong, b {
-		color: #212931;
+		color: #fdfdfd;
 	}
 
 	h1, h2, h3, h4, h5, h6 {
-		color: #212931;
+		color: #e7e7e7;
 	}
 
 	blockquote {
@@ -321,8 +323,8 @@ video {
 	}
 
 	code {
-		background: rgba(220, 220, 220, 0.25);
-		border-color: #eeeeee;
+		background: rgba(173, 150, 21, 0.25);
+		border-color: #917108;
 	}
 
 	hr {
@@ -2213,8 +2215,8 @@ video {
 	button,
 	.button {
 		background-color: transparent;
-		box-shadow: inset 0 0 0 2px #212931;
-		color: #212931 !important;
+		box-shadow: inset 0 0 0 2px #ffffff;
+		color: #ffffff !important;
 	}
 
 		input[type="submit"]:hover,
@@ -2231,8 +2233,8 @@ video {
 		input[type="button"].primary,
 		button.primary,
 		.button.primary {
-			background-color: #212931;
-			box-shadow: none;
+			background-color: #d1d1d14f;
+			box-shadow: inset 0 0 0 2px #ffffff;
 			color: #ffffff !important;
 		}
 
@@ -2241,7 +2243,7 @@ video {
 			input[type="button"].primary:hover,
 			button.primary:hover,
 			.button.primary:hover {
-				background-color: #18bfef;
+				background-color: #888888;
 			}
 
 /* Form */
@@ -2970,7 +2972,7 @@ video {
 
 			header.major > .date {
 				font-size: 1rem;
-				margin: 0 0 4rem 0;
+				margin: 0 0 0 0;
 			}
 
 				header.major > .date:before, header.major > .date:after {
@@ -3244,7 +3246,7 @@ video {
 			width: 100%;
 			height: 100%;
 			background-color: #212931;
-			background-image: url("../../images/overlay.png"), linear-gradient(0deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("../../images/bg.jpg");
+			background-image: url("../../images/overlay.png"), linear-gradient(0deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("../../images/bg2.jpg");
 			background-size: auto,								auto,														100% auto;
 			background-position: center,								center,														top center;
 			background-repeat: repeat,								no-repeat,													no-repeat;
@@ -3525,7 +3527,7 @@ video {
 		-webkit-user-select: none;
 		-ms-user-select: none;
 		user-select: none;
-		height: 20rem;
+		height: 0;
 		padding-bottom: 8rem;
 		position: relative;
 		text-align: center;
@@ -3616,7 +3618,7 @@ video {
 /* Nav */
 
 	#nav {
-		color: #ffffff;
+		color: #000000a2;
 		display: -moz-flex;
 		display: -webkit-flex;
 		display: -ms-flex;
@@ -3625,7 +3627,7 @@ video {
 		-webkit-transition: -webkit-transform 1s ease, opacity 1s ease;
 		-ms-transition: -ms-transform 1s ease, opacity 1s ease;
 		transition: transform 1s ease, opacity 1s ease;
-		background: rgba(255, 255, 255, 0.175);
+		background: #1b1b1ba2;
 		height: 4rem;
 		line-height: 4rem;
 		margin: -4rem auto 0 auto;
@@ -3766,7 +3768,7 @@ video {
 /* Main */
 
 	#main {
-		background-color: #ffffff;
+		background-color: #000000a2;
 		position: relative;
 		margin: 0 auto;
 		width: calc(100% - 4rem);
@@ -3776,7 +3778,7 @@ video {
 
 		#main > * {
 			padding: 4rem 4rem 2rem 4rem ;
-			border-top: solid 2px #eeeeee;
+			border-top: solid 2px #000000a2;
 			margin: 0;
 		}
 
@@ -3867,7 +3869,7 @@ video {
 			}
 
 			#main > .posts > * {
-				padding: 4rem;
+				padding: 1rem;
 				width: 50%;
 			}
 
@@ -4036,7 +4038,7 @@ video {
 			#footer input[type="button"].primary,
 			#footer button.primary,
 			#footer .button.primary {
-				background-color: #717981;
+				background-color: #e3e3e4;
 				box-shadow: none;
 				color: #f5f5f5 !important;
 			}
@@ -4506,7 +4508,7 @@ video {
 		top: 0.75rem;
 		right: 0.75rem;
 		border: 0;
-		color: #ffffff;
+		color: #000000a2;
 		font-family: "Source Sans Pro", Helvetica, sans-serif;
 		font-size: 0.9rem;
 		font-weight: 900;
@@ -4535,13 +4537,13 @@ video {
 		}
 
 		#navPanelToggle.alt {
-			background-color: rgba(255, 255, 255, 0.875);
+			background-color: rgba(0, 0, 0, 0.875);
 			box-shadow: 0 0.125rem 0.75rem 0 rgba(30, 37, 45, 0.25);
 			color: #212931;
 		}
 
 			#navPanelToggle.alt:hover {
-				background-color: #ffffff;
+				background-color: #000000a2;
 			}
 
 		@media screen and (max-width: 980px) {
@@ -4572,7 +4574,7 @@ video {
 		transition: transform 0.5s ease, box-shadow 0.5s ease, visibility 0.5s;
 		display: none;
 		-webkit-overflow-scrolling: touch;
-		background: #ffffff;
+		background: #000000a2;
 		box-shadow: none;
 		color: #212931;
 		height: 100%;
@@ -4593,7 +4595,7 @@ video {
 		}
 
 			#navPanel .links li {
-				border-top: solid 2px #eeeeee;
+				border-top: solid 2px #000000a2;
 			}
 
 				#navPanel .links li a {
