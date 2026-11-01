@@ -3596,7 +3596,7 @@ video {
 		@media screen and (max-width: 980px) {
 
 			#header {
-				height: 14rem;
+				height: 4rem;
 				padding-bottom: 4rem;
 			}
 
@@ -3893,6 +3893,14 @@ video {
 					border-top-width: 0;
 				}
 
+				#main > .posts:has(> article:only-child) {
+					justify-content: center;
+				}
+
+				/* #main > .posts:has(> article:only-child) > article {
+					width: 50%;
+				} */
+
 			@media screen and (max-width: 980px) {
 
 				#main > .posts > * {
@@ -3938,7 +3946,6 @@ video {
 					margin-left: auto;
 					margin-right: auto;
 				}
-
 			}
 
 		@media screen and (max-width: 736px) {
@@ -4508,7 +4515,7 @@ video {
 		top: 0.75rem;
 		right: 0.75rem;
 		border: 0;
-		color: #000000a2;
+		color: #ffffff;
 		font-family: "Source Sans Pro", Helvetica, sans-serif;
 		font-size: 0.9rem;
 		font-weight: 900;
