@@ -2667,6 +2667,18 @@ video {
 
 		}
 
+		.image-centered {
+			display: flex;
+			justify-content: center;
+			margin: 2rem 0;
+		}
+
+		.image-centered img {
+			width: auto;
+			max-width: 100%;
+			height: auto;
+		}
+
 	a.image {
 		overflow: hidden;
 	}
@@ -2972,7 +2984,6 @@ video {
 
 			header.major > .date {
 				font-size: 1rem;
-				margin: 0 0 0 0;
 			}
 
 				header.major > .date:before, header.major > .date:after {
@@ -3794,10 +3805,6 @@ video {
 			padding: 8rem 8rem 6rem 8rem ;
 		}
 
-			#main > .post header.major > .date {
-				margin-top: -2rem;
-			}
-
 			#main > .post header.major > h1, #main > .post header.major h2 {
 				font-size: 4rem;
 				line-height: 1.1;
@@ -3806,6 +3813,12 @@ video {
 
 			#main > .post.featured {
 				text-align: center;
+			}
+
+
+			#main > header.major {
+				padding-top: 1rem;
+				padding-bottom: 1rem;
 			}
 
 			@media screen and (max-width: 1280px) {

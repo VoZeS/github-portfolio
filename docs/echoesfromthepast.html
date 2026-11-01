@@ -66,9 +66,10 @@
 									<div class="row">
 										<div class="col-6 col-12-small">
 											<ul class="actions stacked">
-												<blockquote><h6>Level Design (Figma + Blockout)</h6>
-												<h6>Unity Developer</h6>
-												<h6>Narrative Storytelling</h6></blockquote>
+												<blockquote><h6>Environment Storytelling</h6>
+												<h6>Figma 2D Layout</h6>
+												<h6>Blockout (Unity)</h6>
+												<h6>Unity Developer</h6></blockquote>
 											</ul>
 										</div>
 										<div class="col-6 col-12-small">
@@ -80,22 +81,98 @@
 									</div>
 								<!-- Text stuff -->
 										<h2>The Game</h2>
-									<p><span class="image left"><img src="images/Echoes_Screenshot_1.png" alt="" /></span><b>Echoes From The Past</b> is a local cooperative 2.5D platformer. Players will embark on an adventure as two musician friends who must fight to save the world using the echoes of their voices and instruments in a dystopian future where robots have taken over the world thanks to AI. To do so, they’ll have to travel back in time to retrieve the echoes of the past so they can defeat the central AI that has taken control of the robots.<br /><br /></p>
-									<p><span class="image right"><img src="images/Echoes_Screenshot_2.png" alt="" /></span>In addition to walking and jumping, each player will have a unique ability: Player 1 will be able to reveal invisible objects using sound waves to make them vibrate; these objects will remain visible for 2.5 seconds, and the player can use this ability every 2 seconds; Player 2 will be able to use an echo (sound waves that bounce to push objects), which bounces only once, and can have only one active echo at a time (the echo disappears on the second bounce or if a character “hears” it).<br /></i></p>
-									<p><span class="image left"><img src="images/Echoes_Screenshot_3.png" alt="" /></span><br />For this game, I worked as a Level Designer. The challenge was to create 6 different levels related to a travel through history. The idea was to make this travel seamless, so I used the logical reading order (from left to right) to symbolize this time travel: if you walked left you walked towards the past; and when walking right you went towards the future again. <br /><br /><br />With that idea, I just had to display the levels the following way to make them all come together:</i></p>
-									<span class="image"><img src="images/EchoesLevelsOverview.png" alt="" /></span>
-						
-								<div class="box alt">
+									<p><span class="image left"><img src="images/Echoes_Screenshot_1.png" alt="" /></span><b>Echoes From The Past</b> is a local cooperative 2.5D platformer. Players will embark on an adventure as two musician friends who must fight to save the world using the echoes of their voices and instruments in a dystopian future where robots have taken over the world. To do so, they’ll have to travel back in time to retrieve the echoes of the past so they can change the future to avoid robots to take control of Earth.<br /><br /></p>
+										<h2>Abilities</h2>
+									<p><span class="image right"><img src="images/Echoes_Screenshot_2.png" alt="" /></span>In addition to walking and jumping, each player will have <b>unique ability</b>: </p>
+									<ul>
+										<li><u>Player 1:</u> <b>Reveal invisible objects</b> using sound waves to make them vibrate. These objects will remain visible for 2.5 seconds, and the player can use this ability every 2 seconds.</li>
+										<li><u>Player 2:</u> Create sound waves that bounce to <b>push objects</b>, which bounces only once, and can have only one active echo at a time (the echo disappears on the second bounce or if a character “hears” it).</li>
+									</ul>
+										<h2>Challenges</h2>
+										<h3>Time travel through levels</h3>
+									<p><span class="image left"><img src="images/Echoes_Screenshot_3.png" alt="" /></span>As Level Designer and with the story idea of going back to time, the <b>challenge was to create 6 different levels related to a travel through history</b>.</br></br> 
+										Since we were working on a 2.5D game and I wanted to make this travel seamless, it occured to me to use the logical reading order (from left to right) to symbolize this time travel: by <b>walking left you walked towards the past</b>; and when <b>walking right you went towards the future</b> again.<br /><br />With that idea, I just had to display the levels the following way to make them all come together:</p>
+									<span class="image-centered"><img src="images/EchoesLevelsOverview.png" alt="" /></span>
+										<h3>Era-travel knowledge</h3>
+									<p>When we started protoyping, I found out that with the <b>logical reading order was not enough</b> for the players to understand that they were traveling through time. Because of that, I work alongside the team to bring elements that helped the recognition of traveling through past:</p>
+									<ul>
+										<li><b>Door thresholds:</b> In the first builds of the games, we didn't think about doors. Players reached the following level by crossing a mere gap in the wall. When we thought about doors, we realized that 
+											each era would have different kinds that the player will have to interact with: futuristic doors would open vertically with a card, while medieval doors would open with a classic key in a more traditional way.
+											Since they were the ones grabbing the keys and interacting with doors, they felt owners of those actions and perceived they were on different periods.</br></br></li>
+										
+										<div class="box alt">
+									<div class="row gtr-50 gtr-uniform">
+										<div class="col-4"><span class="image fit"><img src="images/gifs/FuturisticDoorOpening.gif" alt="" /></span></div>
+										<div class="col-4"><span class="image fit"><img src="images/gifs/MedievalDoorOpening.gif" alt="" /></span></div>
+										<div class="col-4"><span class="image fit"><img src="images/gifs/EgyptDoorOpening.gif" alt="" /></span></div>
+									</div>
+								</div>	
+
+											<li><b>UI:</b> The easiest (but ugliest) solution was to put a UI displaying the current year the characters were. We would have liked to work more on this solution, but since it was
+										a short-time game jam, we prioritized player-understanding over elegance.</li>
+
+									<span class="image-centered"><img width="560" height="350" src="images/gifs/YearAnimation.gif" alt="" /></span>
+
+										<li><b>Different era, different color palette:</b> If players traveled through time, they would feel they are in a different era. The artist made sure that each era had their own assets, but this was not enough.
+										The color palette was as important as asset-making: in futuristic levels, white dominate; in the medieval period dark-gray colors prevail; while in the Ancient Egypt, a yellow-brown palette takes over the levels.</li>
+										
+									<li><b>Audio:</b> When the players crossed each travel door, a <i>ticking</i> audio played, indicating time was moving.</li>
+									</ul>
+										<h3>Interactive elements</h3>
+										<p>Since we were using simple color palettes and we wanted colors to prevail in each period, we found out that everything looked the same. Players did not know which assets were
+											interactable and which weren't. To solve that, we used individual colors to guide those interactions and relate game elements between them:</p>
+										<ul>
+											<li><b><u>Yellow:</u></b> Emissive yellow helped the player clearly identify the interactive element that they need to search on every level to complete it: <b>keys</b>!. Adding a point light made it even more important.</li>
+												<span class="image-centered"><img width="560" height="350" src="images/EFTP_YellowKey.png" alt="" /></span>
+											<li><b><u>Green:</u></b> This color is used to relate elevators with each lever, so players could stablish a relationship form the beginning: if the green lever is triggered, the green elevator will get active.</li>
+												<span class="image-centered"><img width="560" height="350" src="images/EFTP_GreenLever.png" alt="" /></span>
+											<li><b><u>Red:</u></b> This one radiated danger. The clear example are the deadly spikes. Since there is only one level where we use spikes to deafeat the user, we needed to show somehow that they were deadly.</li>
+												<span class="image-centered"><img width="560" height="350" src="images/EFTP_RedSpikes.png" alt="" /></span>
+										</ul>
+
+										<h3>Invisible platforms</h3>
+										<p>For the Player 1's abilty to make sense we needed invisible platforms, but if they were fully invisible the <b>player would simply spam the ability all the time and the game would become boring and annoying</b>. 
+											It was one of the main dynamics, so we could not simple left the issue aside. The solution was simple: <b>show some beat on where those platforms were located</b>, so players knew where they were and could solve the level thinking their next moves.</p>
+												<span class="image-centered"><img width="560" height="350" src="images/EFTP_InvisibleBeats.png" alt="" /></span>
+											
+											<h2>Levels breakdown</h2>
+										<p><span class="image left"><img src="images/gifs/Tutorial.gif" alt="" /></span><b><u>Tutorial:</u></b> This was the starting point to present the narrative and basic controls of the players (not yet their unique abilities). </br></br>
+										The characters are sorrounded by anti-human signs and, at the same time, they see the lasts green plants that they will encounter in the future.
+										From the mechanics perspective, <b>they are teached to move and to user keys to open doors</b>.</br></br></p>
+										
+										<p><span class="image right"><img src="images/gifs/EFTP_Level1.gif" alt="" /></span><b><u>Level 1 (Robotic Future):</u></b> Here, jumping and the <b>unique ability of each player is teached within a safe environment</b>: they cannot lose the key or die by using wrong their abilities.</br></br>
+										Player 1 needs to use their ability so Player 2 can reach a good position to use theirs. They should be careful though, because if the first player use the ability again, they'll block Player 2 ability's utility by creating a wall in the way.</p>
+										
+										<p><span class="image left"><img src="images/gifs/EFTP_Level2.gif" alt="" /></span><b><u>Level 2 (Medieval Era):</u></b> For the first time, the players are sorrounded by real hazards, so <b>they'll have to coordinate to avoid dying and losing the key</b>.</br></br>
+										First, Player 1 will need to reveal the floor beneath Player 2 so they can push the key. However, Player 1 needs to be fast or the key will fall in the void.
+										After they get the key, a new dynamic is introduced: Player 2 can push levers to activate moving platforms. When they do this the first time, they discover the echo can ricochet.</p>
+										
+										<p><span class="image right"><img src="images/gifs/EFTP_Level3.gif" alt="" /></span></br><b><u>Level 3 (Ancient Egypt):</u></b> Player 2 needs to ricochet their echo to trigger the lever. <b>This dynamic was presented before and is the only action they can do to advance</b>, so they can't miss it.</br></br>
+											After that, the main idea of this level was that <b>both players depended on Player 1</b>. The whole level is empty unless they reveal the whole invisble platforms.</br></br></p>
+											
+										<p><span class="image left"><img src="images/gifs/EFTP_Interlude.gif" alt="" /></span><b><u>Interlude:</u></b> Narrative stop to recover the <i>Echo From The Past</i> and return to the future. When they do so, the floor breaks and they are forced to keep playing. From now on, they can only go to the right, towards the future.</br></br>
+										Playing the firsts builds, <b>we realized players wouldn't jump down</b>, since it looked like they would die. Because of that, <b>we made the floor tighter so when they entered they'd fall automatically</b> to show there is not any threat.</p>
+
+										<p><span class="image right"><img src="images/gifs/EFTP_Level4.gif" alt="" /></span><b><u>Level 4 (Ancient Egypt):</u></b> The first block they encounter is an inaccessible lever. <b>In previous levels, all elements were aligned so the echo could richochet, but now the Player 1 will need to reveal a wall to make it happen</b>.</br></br>
+										After that, they'll get on an elevator with a gap in the wall next to it, so Player 2 will need to temporize to shoot their echo and push the key down. In this level, the key drops in a safe environment.</p>
+										
+										<p><span class="image left"><img src="images/gifs/EFTP_Level5.gif" alt="" /></span><b><u>Level 5 (Medieval Era):</u></b> Going forward to time, players reach the Medieval Era again. Since they are reaching almost the end, I wanted them to <b>feel in real danger</b> before the calm of the last level.</br></br>
+										They see deadly spikes on the floor, but all is static until they get on the elevator. Then the platform filled with <b>spikes start going up</b>. They are now <b>against the clock</b>. The coordination and comunication is now even more important than before.</p>
+										
+										<p><span class="image right"><img src="images/gifs/EFTP_Level6.gif" alt="" /></span><b><u>Level 6 (Human Future):</u></b> The futuristic period is messy, all is destroyed. Later on they will discover that they accomplished their mission: humans are again populating Earth, but they also destroyed it.</br></br>
+										Players will have to <b>use all the mechanics that they learnt over the levels</b> to complete this one: reveal wall to ricochet the echoes, temporize the revealing of floors to avoid the key from falling into the void and perform a final push to get the key.</p>
+										
+								<!-- <div class="box alt">
 									<div class="row gtr-50 gtr-uniform">
 										<div class="col-4"><span class="image fit"><img src="images/EchoesLvl3.png" alt="" /></span></div>
 										<div class="col-4"><span class="image fit"><img src="images/EchoesLvl2.png" alt="" /></span></div>
 										<div class="col-4"><span class="image fit"><img src="images/EchoesLvl1.png" alt="" /></span></div>
-										<!-- Break -->
+										
 										<div class="col-4"><span class="image fit"><img src="images/EchoesLvl4.png" alt="" /></span></div>
 										<div class="col-4"><span class="image fit"><img src="images/EchoesLvl5.png" alt="" /></span></div>
 										<div class="col-4"><span class="image fit"><img src="images/EchoesLvl6.png" alt="" /></span></div>
 									</div>
-								</div>	
+								</div>	 -->
 					</div>
 
 				<!-- Footer -->
