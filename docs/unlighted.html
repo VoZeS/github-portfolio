@@ -95,7 +95,7 @@
 									<p><span class="image left"><img src="images/UnlightedScreenshot_11.jpg" alt="" /></span><b>Unlighted</b> is a first-person puzzle video game where you enter a dystopian world that reflects the threshold between memory and oblivion, where you experiment with the characteristics of <b>weird materials that materialize when hit by a ray of light</b>. You will solve puzzles in first person using a scanner for given by Umbral Alchemy. With a minimalist and oppressive graphic style, accompanied by sounds and music that will create nerves, tension and an eprocesserie feeling through the tests. Always trying to evoke the weird and the eerie to get the player's attention.</p>
 									<p><span class="image right"><img src="images/UnlightedScreenshot_8.jpg" alt="" /></span>For this game, I worked as a <b>Level Designer</b> and <b>Writer</b>, although, as we were a little team (3 people), I worked as Unity Dev during the whole process of the game (<b>scripting</b>, <b>simple animations</b>, <b>UI</b>...), so I have a great idea of how to work in this engine. My C# knowledge help me to develop my <b>design ideas in-engine</b>, like creating functional blockouts. As said, I focused on the Level Design, thinking and making the levels real in the engine with the blockouts and iterated when necessary.</i></p>
 
-								<h3>Roles</h3>
+								<h1>Roles</h1>
 									<dl>
 										<h2>Level Designer</h2>
 											<h3>Goals</h3>
@@ -153,213 +153,207 @@
 										Below, I'll talk about some of the levels I designed from the layout to the final look.</p>
 									<!-- Tests -->
 									<h4>Test N10 (2D Layout / BlockOut / Final look)</h4>
-									<h5>2D Layout</h5>
-									<div class="box">
-										<p><span class="image right"><img src="images/levels/tests/layout-level-10.png" alt="" /></span>I always use <b>Figma</b>, to display the 2D Layout and the first idea of the level. 
-											Due to further iterations, the final level didn't end up being the same as the layout, but we always sticked to the initial thoughts of the puzzles.</p>
-											
-											<p>At this level, the player already overcame 9 tests and <b>know the mechanics</b> pretty well: move manual and automated lights, activate pressure plates, discovering the invisible materials...
-												So the <b>objectives</b> were: 
+									<dl>
+									<dd>
+										<h5>2D Layout</h5>
+										<div class="box">
+											<p><span class="image right"><img src="images/levels/tests/layout-level-10.png" alt="" /></span>I always use <b>Figma</b>, to display the 2D Layout and the first idea of the level. 
+												Due to further iterations, the final level didn't end up being the same as the layout, but we always sticked to the initial thoughts of the puzzles.</p>
+												
+												<p>At this level, the player already overcame 9 tests and <b>know the mechanics</b> pretty well: move manual and automated lights, activate pressure plates, discovering the invisible materials...
+													So the <b>objectives</b> were: 
+													<ul>
+														<li><b>Combine</b> lights with a defined path to unlock a new objective.</li>
+														<li><b>Break up</b> the previous combination to access the unblocked path.</li>
+														<li><b>Interact</b> multiple times with the <b>invisible elements</b> to trigger different paths.</li>
+													</ul>
+												</p>
+										</div>
+									</dd>
+									<dd>
+									<h5>Blockout</h5>
+										<div class="box">
+											<p><span class="image right"><img src="images/levels/tests/blockout-level-10.png" alt="" /></span>For the blockout, I used <b>Unity</b>. At this point, some iterations were already done, mainly to adapt the level to the real movement
+											and abilities of the player.</p>
+											<p>The most notorious <b>iterations</b> were:
 												<ul>
-													<li><b>Combine</b> manual and automated lights to unlock a blocking path</li>
-													<li><b>Break up</b> the previous combination to access the unblocked path</li>
-													<li><b>Interact</b> multiple times with the <b>invisible elements</b> to trigger different paths</li>
+													<li>Addition of two more invisible elements. They <b>increased the difficulty</b>, since we realized that after playing 9 levels, the level should be more challenging.</li>
+													<li>Separate the button to open the door from it. This made the player's <b>thinking process more challenging</b>. They would need to think how to reach the button and then how to reach the door separetly.</li>
+													<li>Addition of hidden stairs to access the door. Originally, the player would have to jump on the invisible element to reach the door, but <b>it didn't feel right</b> and never had done it before, so stairs triggered by <b>a pressure plate sounded more familiar</b>.</li>
 												</ul>
 											</p>
-									</div>
-									<h5>Blockout</h5>
-									<div class="box">
-										<p><span class="image right"><img src="images/levels/tests/blockout-level-10.png" alt="" /></span>For the blockout, I used <b>Unity</b>. At this point, some <b>iterations</b> were already done, mainly to adapt the level to the real movement
-										and abilities of the player.</p>
-										<p>The most notorious iterations were:
-											<ul>
-												<li>Addition of two more invisible elements. It increased the difficulty, since we realized that after playing 9 levels, the level should be more challenging.</li>
-												<li>Separate door's button (to open it) from the door. This made the thinking process of player more challenging. They would need to think how to reach the button and then how to reach the door separetly.</li>
-												<li>Addition of hidden stairs to access the door. Originally, the player would have to jump on the invisible element to reach the door, but it didn't feel right and never had done it before, so stairs triggered by a pressure plate sounded more familiar.</li>
-											</ul>
-										</p>
-									</div>
-									<h6>Final</h6>
-									<div class="box">
-										<p>Here is where our environment artist starts working and bring to life the level that was though. It is not my work anymore, but his to illuminate, place the necessary assets and
-											make it feel real.</p>
-											
-											<p>It's possible that I may have some intervention at this point, but not probable. After some playtesting, if someone finds something that does not fit the game,
-												I'll come by and modify what's necessary to make it feel right.</p>
-									</div>
-
-									<span class="image fit"><img src="images/levels/tests/final-level-10.png" alt="" /></span>
-
+										</div>
+									</dd>
+									<dd>
+										<h6>Final Look</h6>
+										<div class="box">
+											<p><span class="image right"><img src="images/levels/tests/final-level-10.png" alt="" /></span>Once the artist enters the process and bring the level to life,
+											it's easier to see where it fails and what final touches need to close it.</p>
+												
+											<p>One important <b>pain point</b> we detected was that, in this level, the player was <b>prone to lose the invisible elements</b> easier than 
+												in other levels. If the player did that, there was no way to get them back, since all lights were attached to a defined path. 
+												<b>To solve that, we added a machine that got the "lost" invisible elements and return them into their original place</b>, it served as a reset-level button.</p>
+										</div>
+									</dd>
 									<!-- Umbral -->
-									 
-									<h5>Umbral LVL2 (2D Layout / BlockOut / Final)</h5>
-									<h6>2D Layout</h6>
-									<div class="box">
-										<p>Following the same pattern as before, the layout of the <i>umbral</i> levels are thought. This ones are the most funny to create, since
-										I am able to add crazier and weirder features to the game.</p>
-											
-											<p>For example, in this level, there is a section (number 3) where the player is lost in a non-way-out laberinth. However, if they use the scanner they will see some numbers
-												writed on the walls and, if they follow them, they will be able to find the laberinth's exit and continue with their path.</p>
-									</div>
-
-									<span class="image fit"><img src="images/levels/umbral/layout-umbral_level-2.png" alt="" /></span>
-
-									<h6>Blockout</h6>
-									<div class="box">
-										<p>In this level, bigger than the others at the moment, the blockout's notes are more important than ever. Alongside the environment artist, we though of a note-code 
-											to integrate it in the scene, so we both know what we are talking when playing the level:</p>
-											
-											<p><b>Green text:</b> Means this will be invisible text that the player will be able to see through the scanner.</p>
-											<p><b>White text:</b> My comments, guiding my peer when it comes to add props and lighting.</p>
-											<p><b>White text (Drive links):</b> As I writed the scripts and lore of the game, I letted him know when and what note will appear on each section of the level.
-												I would paste the Google Drive's link to the note.</p>
-
-									</div>
-
-									<!-- YouTube embed: Umbral LVL2 - Walkthrough -->
-									<span class="image fit">
-										<div class="video-embed">
-											<iframe src="https://www.youtube.com/embed/VCWzFZW_KEk?si=vS2OSWB7PSm58We2" title="Umbral LVL2 Walkthrough" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+									<h4>Umbral LVL2 (2D Layout / BlockOut / Final Look)</h4>
+									<dd>
+										<h5>2D Layout</h5>
+										<div class="box">
+											<p><span class="image right"><img src="images/levels/umbral/layout-umbral_level-2.png" alt="" /></span>These levels are located in an alternate dimension, so they are super funny to create, since
+											I am able to <b>go crazier and play around weirder features</b> to the game. The base of these are: gravity change, exploration and non-euclidean puzzles.</p>
+												
+											<p>This particular level was the second of this kind. The first was to teach the player how to change gravity, so I could go a little further in this one:
+												<ul>
+													<li><b>Combine</b> light mechanics with gravity changes.</li>
+													<li><b>Non-euclidean laberinth</b>. At first, look as a no-way-out laberinth, but if they use the scanner (hand device used to see invisible elements) they see some numbers in the way. 
+														Following by order will solve the laberinth and the player will appear at the oposite side of it.</li>
+													<li><b>Lore addition</b> around Test Subjects trapped in this alternate dimension.</li>
+												</ul>
+											</p>
 										</div>
-									</span>
-
-									
-									<h6>Final</h6>
-									<div class="box">
-										<p>Once the blockout was finished, our artist created a marvelous environment that perfectly matched the level.</p>
-											
-											<p>Thanks to the good communication held, all the tiny details persisted over the layout, through the blockout and to the final level, such as:</p>
-											<ul class="alt">
-												<li>The exit monolith is visible from the first button the player interacts with.</li>
-												<li>From where the note is found the user can still see the exit, as well as some structure far away.</li>
-												<li>In the laberinth entrance there is a suspicious sprite showing the player's scanner, encouraging the player to use it to see the order of the laberinth.</li>
+									</dd>
+									<dd>
+										<h5>Blockout</h5>
+										<div class="box">
+											<p>In this level, bigger than the others at the moment, the communication with my peers is more important than ever. Alongside the environment artist, we though of a note-code 
+												to integrate it in the scene:</p>
+											<ul>
+												<li><b>Green text:</b> Means this will be invisible text that the player will be able to see through the scanner.</li>
+												<li><b>White text:</b> My comments, guiding my peer when it comes to add props and lighting.</li>
+												<li><b>White text (Drive links):</b> As I writed the scripts and lore of the game, I letted him know when and what note will appear on each section of the level.
+													I would paste the Google Drive's link to the note.</li>
 											</ul>
-									</div>
 
-									<!-- YouTube embed: Umbral LVL2 - Final -->
-									<span class="image fit">
-										<div class="video-embed">
-											<iframe src="https://www.youtube.com/embed/mfmRKdxX9Og?si=Uc2_VJ1msMjL_G2y" title="Umbral LVL2 Walkthrough" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+											<p>Furthermore, some iterations were done to the level:</p>
+											<ul>
+												<li>Laberynth and secondary path's position were mirrored, so <b>to reach the secondary</b> path the player needed to go <b>further away from the spawnpoint</b>, not closer. The objective of this decision was to make the laberinth path look principal, and the other more secondary.</li>
+												<li>An <b>invisible path was added</b> towards the far away shack for storytelling and <b>coherence reasons</b> (how did that person go there?"). However, it was a clear decoration: the player knew they could not reach that path and would not attempt to go there.</li>
+											</ul>
+											<!-- YouTube embed: Umbral LVL2 - Walkthrough -->
+											<div style="text-align: center;">
+												<iframe width="560" height="350" src="https://www.youtube.com/embed/VCWzFZW_KEk?si=vS2OSWB7PSm58We2" title="Umbral LVL2 Blockout" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+											</div>
 										</div>
-									</span>
+									</dd>
+									<dd>
+										<h5>Final Look</h5>
+										<div class="box">
+												<p>Thanks to the good communication, all the <b>tiny details</b> persisted over the layout, through the blockout and to the final level that <b>benefits the level design</b> and user experience, such as:</p>
+												<ul>
+													<li>The <b>exit monolith</b> is visible from the first button the player interacts with, so it <b>serve as a landmark</b>.</li>
+													<li><b>From where the note is found the user can still see the exit</b>, as well as some structure far away (narrative).</li>
+													<li>In the laberinth entrance there is a suspicious sprite showing the player's scanner to <b>encourage the player to use the device</b> to see the hidden order of the laberinth.</li>
+												</ul>
+												<p>We had multiple players misunderstand the principal and the secondary path. Because of that, we changed more things:</p>
+												<ul>
+													<li><b>Added light inside the laberinth</b> to lead the players eye inside it.</li>
+													<li><b>Hide even more the secondary path</b>, with floating objects.</li>
+													<li><b>Added a sound clue</b> at the end of the laberinth to guide the player. The visual representation of the sound (a motor) can be seen from the secondary path to indicate the principal path.</li>
+												</ul>
+												<!-- YouTube embed: Umbral LVL2 - Walkthrough -->
+											<div style="text-align: center;">
+												<iframe width="560" height="350" src="https://www.youtube.com/embed/mfmRKdxX9Og?si=Uc2_VJ1msMjL_G2y" title="Umbral LVL2 Walkthrough" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+											</div>
+										</div>
+									</dd>
 
 									<!-- Post Explosion -->
-									 
-									<h5>Post-explosion (LVL16)</h5>
-									<h6>2D Layout</h6>
-									<div class="box">
-										<p>These levels were more about exploration. We wanted the user to feel lost, so the first thing to cause that is making bigger levels, more rooms, more to explore. 
-												We wanted to evoke chaos, so we used some visible and standard facilites rooms, such as offices, or even a kitchen and then destroy them to show inestability.</p>
+									<h4>Facilities (Second Level)</h4>
+									<dd>
+									<h5>2D Layout</h5>
+										<div class="box">
+											<p><span class="image right"><img src="images/levels/blended/layout-level-16.png" alt="" /></span>In these levels, we <b>wanted the player to feel lost</b>, so I made these levels bigger, with more rooms to explore.
+												We promoted the exploration with the Umbral levels before, so they were familiarized with it at this point. 
+												Inside this chaos, I though about using some <b>known facility rooms</b>, such as offices or kitchens, so the player could follow some logic among the disaster. This <b>helped their orientation</b>.</p>
 
-												<p>Mechanically, from the start of the game, we wanted the user to be able to use the <i>invert gravity</i> mechanic inside the Umbral Alchemy facilities, and these levels 
-												were the perfect situation to do that.</p>
-									</div>
-
-									<span class="image fit"><img src="images/levels/blended/layout-level-16.png" alt="" /></span>
-
-									<h6>Blockout</h6>
-									<div class="box">
-										<p>These blockouts had to be pretty safe explanatory, since we wanted the spaces to talk by themselves, so the use of colors for the various structures helped me to differentiate
-											to the artist the zones the player would be able to invert gravity and those where the user should explore in a more conventional way.</p>
-
-									</div>
-
-									<span class="image fit"><img src="images/levels/blended/blockout-level-16_1.png" alt="" /></span>
-									<div class="box alt">
-										<div class="row gtr-50 gtr-uniform">
-										<div class="row gtr-50 gtr-uniform">
-											<div class="col-4"><span class="image fit"><img src="images/levels/blended/blockout-level-16_2.png" alt="" /></span></div>
-											<div class="col-4"><span class="image fit"><img src="images/levels/blended/blockout-level-16_3.png" alt="" /></span></div>
-											<div class="col-4"><span class="image fit"><img src="images/levels/blended/blockout-level-16_4.png" alt="" /></span></div>
-											<!-- Break -->
-											<div class="col-4"><span class="image fit"><img src="images/levels/blended/blockout-level-16_5.png" alt="" /></span></div>
-											<div class="col-4"><span class="image fit"><img src="images/levels/blended/blockout-level-16_6.png" alt="" /></span></div>
-											<div class="col-4"><span class="image fit"><img src="images/levels/blended/blockout-level-16_7.png" alt="" /></span></div>
+													<p>Mechanically, from the start of the game, we wanted the player to be able to <b>invert gravity inside the facilities</b>. To do so, we blended these levels with
+														the alternate dimension (Umbral) so narratively made sense.</p>
 										</div>
-									</div>
-
-										<p></p>
-									
-									<h6>Final</h6>
-									<div class="box">
-										<p>New spaces, great variety of rooms and different intentions specific for each of them. After the level coming together in its final shape, we accomplished what we were looking.</p>
-									</div>
-
-									<span class="image fit"><img src="images/levels/blended/final-level-16_1.png" alt="" /></span>
-									<div class="box alt">
-										<div class="row gtr-50 gtr-uniform">
-										<div class="row gtr-50 gtr-uniform">
-											<div class="col-4"><span class="image fit"><img src="images/levels/blended/final-level-16_2.png" alt="" /></span></div>
-											<div class="col-4"><span class="image fit"><img src="images/levels/blended/final-level-16_3.png" alt="" /></span></div>
-											<div class="col-4"><span class="image fit"><img src="images/levels/blended/final-level-16_4.png" alt="" /></span></div>
-											<!-- Break -->
-											<div class="col-4"><span class="image fit"><img src="images/levels/blended/final-level-16_5.png" alt="" /></span></div>
-											<div class="col-4"><span class="image fit"><img src="images/levels/blended/final-level-16_6.png" alt="" /></span></div>
-											<div class="col-4"><span class="image fit"><img src="images/levels/blended/final-level-16_7.png" alt="" /></span></div>
+									</dd>
+									<dd>
+									<h5>Blockout</h5>
+										<div class="box">
+											<p>We wanted the spaces to talk by themselves, so the use of colors for the various structures helped us differentiate
+												the zones the player would be able to invert gravity and those where the user should explore in a more conventional way, 
+												although they were able to change gravity whenever they wanted.</p>
+										<div class="box alt">
+											<div class="row gtr-50 gtr-uniform">
+											<div class="row gtr-50 gtr-uniform">
+												<div class="col-4"><span class="image fit"><img src="images/levels/blended/blockout-level-16_1.png" alt="" /></span></div>
+												<div class="col-4"><span class="image fit"><img src="images/levels/blended/blockout-level-16_2.png" alt="" /></span></div>
+												<div class="col-4"><span class="image fit"><img src="images/levels/blended/blockout-level-16_3.png" alt="" /></span></div>
+												<!-- Break -->
+												<div class="col-4"><span class="image fit"><img src="images/levels/blended/blockout-level-16_4.png" alt="" /></span></div>
+												<div class="col-4"><span class="image fit"><img src="images/levels/blended/blockout-level-16_5.png" alt="" /></span></div>
+												<div class="col-4"><span class="image fit"><img src="images/levels/blended/blockout-level-16_6.png" alt="" /></span></div>
+											</div>
+											</div>
 										</div>
-									</div>
-
-										<p></p>
-
+										</div>
+									</dd>
+									<dd>
+										<h5>Final Look</h5>
+										<div class="box">
+											<p>New spaces, great variety of rooms and different intentions specific for each of them. After the level coming together in its final shape, we accomplished what we were looking.</p>
+										<div class="box alt">
+											<div class="row gtr-50 gtr-uniform">
+											<div class="row gtr-50 gtr-uniform">
+												<div class="col-4"><span class="image fit"><img src="images/levels/blended/final-level-16_1.png" alt="" /></span></div>
+												<div class="col-4"><span class="image fit"><img src="images/levels/blended/final-level-16_2.png" alt="" /></span></div>
+												<div class="col-4"><span class="image fit"><img src="images/levels/blended/final-level-16_3.png" alt="" /></span></div>
+												<!-- Break -->
+												<div class="col-4"><span class="image fit"><img src="images/levels/blended/final-level-16_4.png" alt="" /></span></div>
+												<div class="col-4"><span class="image fit"><img src="images/levels/blended/final-level-16_5.png" alt="" /></span></div>
+												<div class="col-4"><span class="image fit"><img src="images/levels/blended/final-level-16_6.png" alt="" /></span></div>
+											</div>
+											</div>
+										</div>
+										</div>
+									</dd>
 									<!-- Bossfight -->
-									 
-									<h5>Final level (Bossfight)</h5>
-									<h6>2D Layout</h6>
-									<div class="box">
-										<p>For this level I stepped directly into the blockout from this layout, since I wanted to try new things and feelings to the game. You will se how this changed. I had the main idea in mind, though, that was escaping from a self-moving world.</p>
-										<p>Finally, we though about our two main character fight each other, while the player was just in the middle, trying to help one or the other. These characters foguht by using
-											their <i>divine</i> powers by moving walls, assets and floors from the user's sorroundings.</p>
-									</div>
-
-									<span class="image fit"><img src="images/levels/bossfight/layout-bossfight.png" alt="" /></span>
-
-									<h6>Blockout</h6>
-									<div class="box">
-										<p>The idea of the structures being alive and a soundtrack matching the player's steps fascinated me and I finally applied it to <b>Unlighted</b>.</p>
-										<p>Once I knew clearly what to do, I started blocking the whole level and talking with our composer, since I wanted the music to match the tempo of the level, just like the <a href="https://www.youtube.com/watch?v=DGtuQRohHds" target="_blank" rel="noopener noreferrer">Ashtray Maze</a> in <i>Control (Remedy Entertaiment, 2019)</i> .</p>
-										<p>The following video was a WIP little prototype of how I wanted the final level to look that I shared with the composer.</p>
-									</div>
-
-									<!-- YouTube embed: Bossfight - Blockout WIP -->
-									<span class="image fit">
-										<div class="video-embed">
-											<iframe src="https://www.youtube.com/embed/l47v6KZ-GmI?si=k06uEEj9p8z5jvL4" title="Bossfight Blockout WIP" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+									<h4>Final level (Bossfight)</h4>
+									<dd>
+										<h5>2D Layout</h5>
+										<div class="box">
+											<p><span class="image right"><img src="images/levels/bossfight/layout-bossfight.png" alt="" /></span>For this level I stepped directly into the blockout from this layout, since I wanted to try new things and feelings to the game. You will se how this changed. I had the main idea in mind, though, that was escaping from a self-moving world.</p>
+											<p>Finally, we though about our two main character fight each other, while the player was just in the middle, trying to help one or the other. These characters foguht by using
+												their <i>divine</i> powers by moving walls, assets and floors from the user's sorroundings.</p>
 										</div>
-									</span>
-
-									<div class="box">
-										<p>After a few talks with the composer, a more advanced blockout was build, with some dialogues already integrated.</p>
-									</div>
-
-									<!-- YouTube embed: Bossfight - Blockout with dialogue -->
-									<span class="image fit">
-										<div class="video-embed">
-											<iframe src="https://www.youtube.com/embed/oyJaxvhWrIw?si=h7wQUPv18dlXo2DK" title="Bossfight Blockout with dialogue" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+									</dd>
+									<dd>
+										<h5>Blockout</h5>
+										<div class="box">
+											<p>The idea of the structures being alive and a soundtrack matching the player's steps fascinated me and I finally applied it to <b>Unlighted</b>.</p>
+											<p>Once I knew clearly what to do, I started blocking the whole level and talking with our composer, since I wanted the music to match the tempo of the level, just like the <a href="https://www.youtube.com/watch?v=DGtuQRohHds" target="_blank" rel="noopener noreferrer">Ashtray Maze</a> in <i>Control (Remedy Entertaiment, 2019)</i> .</p>
+											<p>The following video was a WIP little prototype of how I wanted the final level to look that I shared with the composer.</p>
+												<!-- YouTube embed: Umbral LVL2 - Walkthrough -->
+												<div style="text-align: center;">
+													<iframe width="560" height="350" src="https://www.youtube.com/embed/l47v6KZ-GmI?si=k06uEEj9p8z5jvL4" title="Bossfight Blockout WIP" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+												</div>
 										</div>
-									</span>
-
-										<p></p>
-									
-									<h6>Final</h6>
-									<div class="box">
-										<p>After our artist stepped by and after some iterations, we finally had our final level that worked as a bossfight.</p>
-										<p>Music was still not part of the level.</p>
-									</div>
-
-									<!-- YouTube embed: Bossfight - Final -->
-									<span class="image fit">
-										<div class="video-embed">
-											<iframe src="https://www.youtube.com/embed/_gOY8h3epHU?si=fbGzKOZdR_UTn4er" title="Bossfight Final" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+										<div class="box">
+											<p>After a few talks with the composer, a more advanced blockout was build, with some dialogues already integrated.</p>
+											<div style="text-align: center;">
+													<iframe width="560" height="350" src="https://www.youtube.com/embed/oyJaxvhWrIw?si=h7wQUPv18dlXo2DK" title="Bossfight Blockout with dialogue" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+												</div>
+										</div>									
+									</dd>
+									<dd>
+										<h5>Final Look</h5>
+										<div class="box">
+											<p>After our artist stepped by and after some iterations, we finally had our final level that worked as a bossfight.</p>
+											<p>Music was still not part of the level.</p>
+												<div style="text-align: center;">
+													<iframe width="560" height="350" src="https://www.youtube.com/embed/_gOY8h3epHU?si=fbGzKOZdR_UTn4er" title="Bossfight Final" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+												</div>
 										</div>
-									</span>
-
-										<h2>Writer</h2>
-										<dd>
-											<p>Once we had the fantasy of the game and some ideas of the plot, I was in charge of writing down all the cutscenes and dialogues of the characters.
-												In addition, I also managed the Voice Over recordings and the audio edition.</p>
-											<p>To end, I writed all the secondary notes that the player can find across the levels. These serve as a complement of the main dialogs, and helps the player to know 
-												better the storyline of the game, which could had been harder to understand without them.</p>
-										</dd>
+									</dd>
+									<h2>Writer</h2>
+										<p>Once we had the fantasy of the game and some ideas of the plot, I was in charge of writing down all the cutscenes and dialogues of the characters.
+											In addition, I also managed the Voice Over recordings and the audio edition.</p>
+										<p>To end, I writed all the secondary notes that the player can find across the levels. These serve as a complement of the main dialogs, and helps the player to know 
+											better the storyline of the game, which could had been harder to understand without them.</p>
 
 									<span class="image fit"><img src="images/timetable-storyline-1.png" alt="" /></span>
 									<span class="image fit"><img src="images/timetable-storyline-2.png" alt="" /></span>
