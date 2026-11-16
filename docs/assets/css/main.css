@@ -3107,11 +3107,11 @@ video {
 	}
 
 		table tbody tr:nth-child(2n + 1) {
-			background-color: rgba(220, 220, 220, 0.25);
+			background-color: rgba(120, 130, 224, 0.068);
 		}
 
 	table th {
-		color: #212931;
+		color: #4c5e70;
 	}
 
 	table thead {
@@ -3645,7 +3645,7 @@ video {
 		background: #1b1b1ba2;
 		height: 4rem;
 		line-height: 4rem;
-		margin: -4rem auto 0 auto;
+		margin: -6rem auto 0 auto;
 		overflow: hidden;
 		padding: 0 2rem 0 0;
 		position: relative;
